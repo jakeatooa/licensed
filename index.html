@@ -194,8 +194,9 @@
   }
 
   .playbook-toc li .toc-num {
-    font-family: 'DINPro', sans-serif;
-    font-size: 9px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    font-weight: 300;
     color: var(--accent);
     flex-shrink: 0;
   }
@@ -321,12 +322,14 @@
   }
 
   .inside-card-num {
-    font-family: 'DINPro', sans-serif;
-    font-size: 9px;
-    letter-spacing: 0.15em;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(44px, 5vw, 64px);
+    font-weight: 300;
+    letter-spacing: -0.02em;
     color: var(--accent);
-    margin-bottom: 20px;
     display: block;
+    line-height: 0.9;
+    margin-bottom: 16px;
   }
 
   .inside-card h3 {
@@ -606,12 +609,13 @@
   }
 
   .chapter-num {
-    font-family: 'DINPro', sans-serif;
-    font-size: 9px;
-    letter-spacing: 0.2em;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(64px, 8vw, 100px);
+    font-weight: 300;
+    letter-spacing: -0.03em;
     color: var(--accent);
-    text-transform: uppercase;
     display: block;
+    line-height: 0.9;
     margin-bottom: 16px;
   }
 
@@ -716,7 +720,7 @@
     text-align: center;
   }
   .doodle-img {
-    max-width: 320px;
+    max-width: 640px;
     width: 100%;
     height: auto;
     mix-blend-mode: multiply;
@@ -727,7 +731,7 @@
     margin: 0 auto;
   }
   .doc-doodle {
-    max-width: 260px;
+    max-width: 520px;
     width: 100%;
     height: auto;
     mix-blend-mode: multiply;
@@ -753,7 +757,25 @@
 
   .hero-visual { animation: fadeUp 0.8s ease 0.3s both; }
 
-
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .inside-grid .reveal:nth-child(2) { transition-delay: 0.08s; }
+  .inside-grid .reveal:nth-child(3) { transition-delay: 0.16s; }
+  .inside-grid .reveal:nth-child(4) { transition-delay: 0.24s; }
+  .inside-grid .reveal:nth-child(5) { transition-delay: 0.32s; }
+  .inside-grid .reveal:nth-child(6) { transition-delay: 0.40s; }
+  .who-grid .reveal:nth-child(2) { transition-delay: 0.1s; }
+  .who-grid .reveal:nth-child(3) { transition-delay: 0.2s; }
+  .stat-block .reveal:nth-child(2) { transition-delay: 0.1s; }
+  .stat-block .reveal:nth-child(3) { transition-delay: 0.2s; }
 
   /* CARD DOODLE OVERLAYS */
   .hero-card-doodle {
@@ -877,7 +899,7 @@
           <li><span class="toc-num">03</span> Choose Your Celebration Style</li>
           <li><span class="toc-num">04</span> The Licensure Ritual</li>
           <li><span class="toc-num">05</span> What to Say</li>
-          <li><span class="toc-num">06</span> Visual Templates and Announcements</li>
+          <li><span class="toc-num">06</span> What the License Is Worth</li>
           <li><span class="toc-num">07</span> A Note from OOA</li>
         </ul>
         <span class="badge">Free · No Signup</span>
@@ -901,20 +923,20 @@
       <p class="body-text" style="margin-top:20px;">And then it's done. A LinkedIn update. Maybe a card from the office. Then Monday morning again.</p>
 
       <div class="stat-block">
-        <div class="stat-item">
+        <div class="stat-item reveal">
           <span class="stat-number">5–8</span>
           <span class="stat-text">Years of education and experience required before sitting for the ARE</span>
         </div>
-        <div class="stat-item">
+        <div class="stat-item reveal">
           <span class="stat-number">3,200+</span>
           <span class="stat-text">Hours of documented AXP experience required in the United States</span>
         </div>
-        <div class="stat-item">
+        <div class="stat-item reveal">
           <span class="stat-number">6</span>
           <span class="stat-text">Divisions of the ARE, each requiring months of focused preparation</span>
         </div>
       </div>
-      <div class="doodle-wrap">
+      <div class="doodle-wrap reveal">
         <img class="doodle-img" src="BK_D_B_Figure%201_2%20Chapter%20Two.png" alt="Energy over time: Architecture declining, everything else rising">
       </div>
     </div>
@@ -928,32 +950,32 @@
   <span class="section-label">What's inside</span>
   <h2 class="section-title">A complete guide to celebrating the way you want to.</h2>
   <div class="inside-grid">
-    <div class="inside-card">
+    <div class="inside-card reveal">
       <span class="inside-card-num">01 — 02</span>
       <h3>The Acknowledgment</h3>
       <p>An honest accounting of what licensure actually required. Not romanticized. Not minimized. Written in a way you can read aloud or hand to someone who wants to understand why this matters.</p>
     </div>
-    <div class="inside-card">
+    <div class="inside-card reveal">
       <span class="inside-card-num">03</span>
       <h3>Three Celebration Styles</h3>
       <p>The Studio Redemption Party. The ARE Funeral. Stamp and Sip. Each with a tone, a structure, and a clear sense of who it's for. Pick one or steal from all three.</p>
     </div>
-    <div class="inside-card">
+    <div class="inside-card reveal">
       <span class="inside-card-num">04</span>
       <h3>The Licensure Ritual</h3>
       <p>A short, readable ceremony designed to name the work, acknowledge the cost, and mark the moment with intention. Can be read aloud. Can be done alone. The emotional center of the playbook.</p>
     </div>
-    <div class="inside-card">
+    <div class="inside-card reveal">
       <span class="inside-card-num">05</span>
       <h3>Scripts and Toasts</h3>
       <p>Real words for real moments. A toast. A note from a mentor. Something to say to yourself before the party starts. Written to feel human, not ceremonial.</p>
     </div>
-    <div class="inside-card">
+    <div class="inside-card reveal">
       <span class="inside-card-num">06</span>
-      <h3>Announcement Templates</h3>
-      <p>Three LinkedIn announcement approaches for different tones. Instagram caption templates. Slack copy. A printable poster spec. Everything you need to tell people without feeling awkward about it.</p>
+      <h3>What the License Is Worth</h3>
+      <p>Your market value just changed — most architects don't know how to use that. A direct look at what licensure means for your salary, your title, and the leverage you have right now.</p>
     </div>
-    <div class="inside-card">
+    <div class="inside-card reveal">
       <span class="inside-card-num">07</span>
       <h3>A Note from OOA</h3>
       <p>Why Out of Architecture made this. What we believe about what a credential means and doesn't mean. A quiet invitation, not a sales pitch.</p>
@@ -968,21 +990,21 @@
   <span class="section-label">Who it's for</span>
   <h2 class="section-title">For anyone who wants this moment to land the way it should.</h2>
   <div class="who-grid">
-    <div class="who-item accent">
+    <div class="who-item accent reveal">
       <h3>Newly Licensed Architects</h3>
       <p>If you just passed your final exam, this is yours. A guide to marking the moment in a way that matches the weight of what you did to get here.</p>
     </div>
-    <div class="who-item">
+    <div class="who-item reveal">
       <h3>Colleagues and Mentors</h3>
       <p>If someone in your firm or network just got licensed and you want to actually do something meaningful about it, this gives you structure and language.</p>
     </div>
-    <div class="who-item">
+    <div class="who-item reveal">
       <h3>The Career Curious</h3>
       <p>You just crossed a finish line and something shifted. You're not sure what's next — you just know you're curious. That's exactly where the most interesting career conversations start.</p>
     </div>
   </div>
-  <div class="doodle-wrap center" style="margin-top: 64px;">
-    <img class="doodle-img" src="BK_D_B_Figure%201_4%20Chapter%20Four.png" alt="Normal people: 2D aesthetic. Architects: 8-dimensional aesthetic." style="max-width: 420px;">
+  <div class="doodle-wrap center reveal" style="margin-top: 64px;">
+    <img class="doodle-img" src="BK_D_B_Figure%201_4%20Chapter%20Four.png" alt="Normal people: 2D aesthetic. Architects: 8-dimensional aesthetic." style="max-width: 840px;">
   </div>
 </section>
 
@@ -994,16 +1016,16 @@
     <h2 class="section-title">The credential changes what's available to you. That's worth sitting with.</h2>
 
     <div class="next-grid">
-      <div class="next-text">
+      <div class="next-text reveal">
         <h3>The "now what" is a real question.</h3>
         <p>A lot of architects feel something unexpected after licensure. The milestone they worked toward for years is behind them, and the path forward is less obvious than it was before.</p>
         <p>Your market value just changed. Firms value a licensed architect differently — and most people don't know how to use that. If you're asking any version of "what do I do with this now," that's our favorite conversation to have.</p>
-        <div class="doodle-wrap" style="margin-top: 48px;">
-          <img class="doodle-img" src="BK_D_B_Figure%203_0%20Part%20Three.png" alt="You are here: tangled web of skills leading to question mark" style="max-width: 360px;">
+        <div class="doodle-wrap reveal" style="margin-top: 48px;">
+          <img class="doodle-img" src="BK_D_B_Figure%203_0%20Part%20Three.png" alt="You are here: tangled web of skills leading to question mark" style="max-width: 720px;">
         </div>
       </div>
       <div>
-        <div class="collective-card">
+        <div class="collective-card reveal">
           <span class="section-label">Out of Architecture — Career Coaching</span>
           <h3>Whether you know what you want or you're just career curious — let's talk.</h3>
           <p>Jake and Erin work with licensed architects and designers at every stage of the "what's next" question. Some people come in with a specific transition in mind. Most come in somewhere between unsettled and intrigued. Both are the right time to have the conversation.</p>
@@ -1024,15 +1046,15 @@
 <!-- ABOUT OOA -->
 <section class="about-section">
   <div class="about-grid">
-    <div>
+    <div class="reveal">
       <span class="section-label">About</span>
       <h2 class="section-title">Out of Architecture</h2>
     </div>
-    <div>
+    <div class="reveal">
       <p class="body-text" style="font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--ink); line-height: 1.6;">We are not trying to pull anyone away from architecture. We are trying to give architects more agency over what happens next.</p>
       <p class="body-text" style="margin-top: 28px;">Out of Architecture was founded by Jake Rudin and Erin Pellegrino — both licensed architects whose careers moved well beyond traditional practice. Jake has spent years at the intersection of recruiting, coaching, and architectural talent. Erin brings design and academia. Together they built OOA to support architects at the moments when career, identity, and direction get real.</p>
-      <div class="doodle-wrap" style="margin-top: 56px;">
-        <img class="doodle-img" src="BK_D_B_Figure%204_0%20Conclusion.png" alt="End of book, start of journey: bird leaving cage" style="max-width: 380px;">
+      <div class="doodle-wrap reveal" style="margin-top: 56px;">
+        <img class="doodle-img" src="BK_D_B_Figure%204_0%20Conclusion.png" alt="End of book, start of journey: bird leaving cage" style="max-width: 760px;">
       </div>
     </div>
   </div>
@@ -1059,7 +1081,7 @@
     </div>
 
     <!-- CHAPTER 01 -->
-    <div class="doc-chapter">
+    <div class="doc-chapter reveal">
       <span class="chapter-num">01</span>
       <h2 class="chapter-title">This Moment Matters</h2>
       <img class="doc-doodle" src="BK_D_B_Figure%201_0%20Part%20One.png" alt="The Disconnect">
@@ -1076,7 +1098,7 @@
     </div>
 
     <!-- CHAPTER 02 -->
-    <div class="doc-chapter">
+    <div class="doc-chapter reveal">
       <span class="chapter-num">02</span>
       <h2 class="chapter-title">What You Actually Accomplished</h2>
       <img class="doc-doodle" src="BK_D_B_Figure%202_0%20Part%20Two.png" alt="School and Practice: the overlap is internships">
@@ -1101,7 +1123,7 @@
     </div>
 
     <!-- CHAPTER 03 -->
-    <div class="doc-chapter">
+    <div class="doc-chapter reveal">
       <span class="chapter-num">03</span>
       <h2 class="chapter-title">Choose Your Celebration Style</h2>
       <div class="doc-body">
@@ -1138,7 +1160,7 @@
     </div>
 
     <!-- CHAPTER 04 -->
-    <div class="doc-chapter">
+    <div class="doc-chapter reveal">
       <span class="chapter-num">04</span>
       <h2 class="chapter-title">The Licensure Ritual</h2>
       <img class="doc-doodle" src="BK_D_B_Figure%201_3%20Chapter%20Three.png" alt="Hope over time in the real world">
@@ -1166,7 +1188,7 @@
     </div>
 
     <!-- CHAPTER 05 -->
-    <div class="doc-chapter">
+    <div class="doc-chapter reveal">
       <span class="chapter-num">05</span>
       <h2 class="chapter-title">What to Say</h2>
       <div class="doc-body">
@@ -1190,49 +1212,39 @@
     </div>
 
     <!-- CHAPTER 06 -->
-    <div class="doc-chapter">
+    <div class="doc-chapter reveal">
       <span class="chapter-num">06</span>
-      <h2 class="chapter-title">Visual Templates and Announcements</h2>
+      <h2 class="chapter-title">What the License Is Worth</h2>
       <div class="doc-body">
-        <p>You do not have to announce anything publicly. But if you want to, here are ways to do it that feel like you and not like a press release.</p>
+        <p>The certificate arrived. The hard part is done. Now there's a conversation most architects don't know they're allowed to have.</p>
+        <p>Licensure changed your professional standing. It also changed your market value — often significantly. Firms budget licensed and unlicensed architects differently. Project Architect as a title on many job descriptions means licensed. Principal of Record is now something you can become. That accountability has market value, and most newly licensed architects walk past it without claiming it.</p>
 
-        <h4>LinkedIn — Three Tones</h4>
+        <h4>The window is now</h4>
+        <p>The first weeks after licensure are the highest-leverage negotiation moment you will have for a long time. You are not asking for more money for the same job. You are asking to be compensated for a changed professional status. That's a different conversation — and a more defensible one.</p>
+        <p>The longer you wait, the more the credential becomes a background fact rather than a negotiation point. Use it now.</p>
+
+        <h4>What firms actually pay for</h4>
+        <p>When a licensed architect stamps a drawing, they take on professional liability. Firms billing for stamped drawings bill differently than for unsigned work. The architect of record on a project carries legal accountability that unlicensed staff cannot. That accountability is priced into the labor market — just usually not passed along to the person providing it unless they ask.</p>
+        <p>What you now have is the ability to stamp. What that's worth to your firm is worth knowing before your next salary conversation.</p>
+
+        <h4>How to have the conversation</h4>
+        <p>Be direct and specific. Don't ask for "a check-in." Ask for a salary conversation based on your changed status. The framing matters:</p>
 
         <div class="script-block">
-          <span class="script-label">Direct and factual</span>
-          "I passed the final division of the ARE earlier this month. After [X] years of education, [X] hours of documented experience, and seven exams, I'm a licensed architect. It took longer than expected and cost more than I planned. I'm glad it's done, and I'm proud of it."
+          <span class="script-label">Opening to your manager or principal</span>
+          "I passed the final division of the ARE last month and received my license. I wanted to talk about how that changes things from a compensation standpoint — I know the firm bills differently for licensed work and I'd like to understand where I land now."
         </div>
 
-        <div class="script-block">
-          <span class="script-label">Personal and reflective</span>
-          "Licensed. That word didn't feel real for a few days after I got the confirmation. I started this process [X years] ago. There were failed exams. There were study sessions I didn't want to have. There were a lot of Tuesdays. I want to thank [specific people] for being present through it. And I want to acknowledge that finishing things that take a long time is its own kind of achievement."
-        </div>
+        <p>You don't need a performance argument. You need a status argument. The credential changed. Compensation should reflect that. Firms that value licensed staff — and most do — will engage that conversation honestly.</p>
 
-        <div class="script-block">
-          <span class="script-label">Brief and earned</span>
-          "Licensed Architect. [State]. [Year]. It took everything it was supposed to take."
-        </div>
-
-        <h4>Instagram Caption</h4>
-        <div class="script-block">
-          <span class="script-label">Template</span>
-          "Officially licensed. [State], [Year].<br><br>[One sentence about what the journey actually looked like.] Grateful for [specific people]. Not looking back.<br><br>#licensedarchitect #ARE #architecturelife"
-        </div>
-
-        <h4>Slack or Internal Announcement</h4>
-        <div class="script-block">
-          <span class="script-label">Office or team message</span>
-          "Wanted to share some news. I passed the final ARE division and received my architecture license. It's been a long process and I'm glad it's behind me. Thanks to everyone here who's been patient with my intermittent distraction. Back to full capacity."
-        </div>
-
-        <h4>Printable Poster</h4>
-        <p>Consider printing a simple typographic poster with your name, license number, state, and year. A clean serif font on a white or cream background. Frame it. Put it somewhere you'll see it. The physical object does something that a digital notification doesn't.</p>
-        <p>Dimensions: 8x10 or 11x14. A template is included with this download.</p>
+        <h4>What's realistic</h4>
+        <p>Market ranges vary by city, firm type, and your years of experience. But in most markets, a licensed architect earns meaningfully more than an unlicensed one at the same seniority level. If your compensation has not changed and your credential has, the gap is yours to name.</p>
+        <p>If you want to know what you're actually worth in your market — not a generic number, but a real read on your specific situation — that's a conversation we have with people regularly. It's one of the more useful things we do.</p>
       </div>
     </div>
 
     <!-- CHAPTER 07 -->
-    <div class="doc-chapter" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
+    <div class="doc-chapter reveal" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
       <span class="chapter-num">07</span>
       <h2 class="chapter-title">A Note from OOA</h2>
       <img class="doc-doodle" src="BK_D_B_Figure%203_0%20Part%20Three.png" alt="You are here: where does the path go from licensure?">
@@ -1275,6 +1287,18 @@ document.querySelectorAll('a[href="#handbook"]').forEach(a => {
     document.getElementById('handbook').scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+
+// Scroll reveal
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(el => {
+    if (el.isIntersecting) {
+      el.target.classList.add('visible');
+      revealObserver.unobserve(el.target);
+    }
+  });
+}, { threshold: 0.08, rootMargin: '-20px 0px' });
+
+document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 </script>
 
 </body>
