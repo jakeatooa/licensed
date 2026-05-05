@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- O — large light serif, upper left -->
+  <text x="1" y="68" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="400" fill="#111009">O</text>
+  <!-- A — large heavy serif, lower right -->
+  <text x="44" y="100" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="700" fill="#111009">A</text>
+  <!-- Diagonal slash -->
+  <line x1="14" y1="96" x2="84" y2="10" stroke="#111009" stroke-width="3" stroke-linecap="round"/>
+  <!-- Dot -->
+  <circle cx="89" cy="9" r="5" fill="#111009"/>
+</svg>
