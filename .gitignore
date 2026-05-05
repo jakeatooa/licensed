@@ -1,0 +1,6 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Design system source (not served by the page)
+colors_and_type.css
