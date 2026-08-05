@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>You Earned the Title. Celebrate the Moment. | Out of Architecture</title>
+
+<!-- Google Analytics (GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-08WPVDRJJ9"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-08WPVDRJJ9');
+</script>
 <meta name="description" content="A free party playbook for newly licensed architects. How to actually celebrate the milestone you spent years earning.">
 <meta name="keywords" content="architect licensure celebration, ARE exam passed, licensed architect party, how to celebrate passing ARE, architect license party ideas, newly licensed architect">
 
@@ -33,12 +42,15 @@
   @font-face { font-family:'DINPro'; src:url('fonts/DINPro-Bold.otf') format('opentype'); font-weight:700; font-style:normal; font-display:swap; }
 
   :root {
+    --bg: #000000;
+    --surface: #16130D;
     --cream: #FDFAF4;
     --ink: #111009;
     --warm-gray: #6B6455;
-    --rule: rgba(0,0,0,0.09);
-    --accent: #B89549;
-    --accent-light: #D4AC6A;
+    --muted: #B8AF9B;
+    --rule: rgba(255,255,255,0.08);
+    --accent: #C4962A;
+    --accent-light: #D9B461;
     --section-pad: clamp(80px, 10vw, 140px);
   }
 
@@ -47,8 +59,8 @@
   html { font-size: 16px; scroll-behavior: smooth; }
 
   body {
-    background: var(--cream);
-    color: var(--ink);
+    background: var(--bg);
+    color: var(--cream);
     font-family: 'DINPro', sans-serif;
     font-weight: 300;
     line-height: 1.7;
@@ -64,7 +76,7 @@
     border-bottom: 1px solid var(--rule);
     position: sticky;
     top: 0;
-    background: var(--cream);
+    background: var(--bg);
     z-index: 100;
   }
 
@@ -73,7 +85,7 @@
     font-size: 11px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--warm-gray);
+    color: var(--muted);
     text-decoration: none;
   }
 
@@ -134,7 +146,7 @@
   .hero-sub {
     font-size: 17px;
     font-weight: 300;
-    color: var(--warm-gray);
+    color: var(--muted);
     line-height: 1.7;
     max-width: 400px;
     margin-bottom: 40px;
@@ -165,7 +177,7 @@
     font-size: 9px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--warm-gray);
+    color: var(--muted);
     margin-bottom: 32px;
   }
 
@@ -233,7 +245,7 @@
     font-size: 10px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--warm-gray);
+    color: var(--muted);
     margin-bottom: 40px;
     display: block;
   }
@@ -257,7 +269,7 @@
   .body-text {
     font-size: 16px;
     font-weight: 300;
-    color: var(--warm-gray);
+    color: var(--muted);
     line-height: 1.8;
     max-width: 560px;
   }
@@ -299,7 +311,7 @@
 
   .stat-text {
     font-size: 14px;
-    color: var(--warm-gray);
+    color: var(--muted);
     line-height: 1.6;
   }
 
@@ -316,7 +328,7 @@
   }
 
   .inside-card {
-    background: var(--ink);
+    background: var(--surface);
     color: var(--cream);
     padding: 40px 36px;
     position: relative;
@@ -378,7 +390,7 @@
 
   .who-item p {
     font-size: 13px;
-    color: var(--warm-gray);
+    color: var(--muted);
     line-height: 1.7;
   }
 
@@ -386,7 +398,12 @@
   /* WHATS NEXT */
   .next-section {
     background: var(--accent-light);
+    color: var(--ink);
   }
+
+  .next-section .section-label { color: var(--ink); opacity: 0.7; }
+  .next-section .section-label::before { color: var(--ink); }
+  .next-section h2.section-title { color: var(--ink); }
 
   .next-section .section-rule-top {
     border-top: 3px solid var(--accent);
@@ -515,9 +532,16 @@
   .hero-squiggle {
     display: block;
     width: 220px;
-    height: auto;
+    height: 21px;
     margin-bottom: 32px;
     margin-top: -16px;
+    background-color: var(--cream);
+    -webkit-mask-image: url('assets/squiggle-underline.svg');
+    mask-image: url('assets/squiggle-underline.svg');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
   }
 
   /* ABOUT OOA */
@@ -554,7 +578,7 @@
     font-size: 10px;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    color: var(--warm-gray);
+    color: var(--muted);
     text-decoration: none;
   }
 
@@ -597,7 +621,7 @@
 
   .doc-sub {
     font-size: 15px;
-    color: var(--warm-gray);
+    color: var(--muted);
     font-style: italic;
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
@@ -632,7 +656,7 @@
   .doc-body {
     font-size: 16px;
     line-height: 1.85;
-    color: var(--ink);
+    color: var(--cream);
     font-weight: 300;
   }
 
@@ -643,14 +667,14 @@
     font-size: 22px;
     font-weight: 400;
     margin: 40px 0 16px;
-    color: var(--ink);
+    color: var(--cream);
   }
 
   .archetype-block {
     border-left: 2px solid var(--accent);
     padding: 24px 28px;
     margin: 32px 0;
-    background: rgba(196,85,42,0.04);
+    background: rgba(196,150,42,0.08);
   }
 
   .archetype-block h5 {
@@ -663,7 +687,7 @@
   .archetype-block .archetype-meta {
     font-family: 'DINPro', sans-serif;
     font-size: 10px;
-    color: var(--warm-gray);
+    color: var(--muted);
     letter-spacing: 0.1em;
     margin-bottom: 12px;
     text-transform: uppercase;
@@ -699,7 +723,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 18px;
     line-height: 1.8;
-    color: var(--ink);
+    color: var(--cream);
   }
 
   .script-block .script-label {
@@ -724,8 +748,8 @@
     max-width: 640px;
     width: 100%;
     height: auto;
-    mix-blend-mode: multiply;
-    opacity: 0.82;
+    mix-blend-mode: screen;
+    opacity: 0.55;
     display: block;
   }
   .doodle-wrap.center .doodle-img {
@@ -735,8 +759,8 @@
     max-width: 520px;
     width: 100%;
     height: auto;
-    mix-blend-mode: multiply;
-    opacity: 0.8;
+    mix-blend-mode: screen;
+    opacity: 0.5;
     display: block;
     margin: 0 auto 40px;
   }
@@ -875,7 +899,7 @@
 <!-- NAV -->
 <nav>
   <a href="https://outofarchitecture.com" class="nav-logo">
-    <img src="assets/OOA_Logo_OneLine_black.png" alt="Out of Architecture" class="nav-logo-img">
+    <img src="assets/OOA_Logo_OneLine_white.png" alt="Out of Architecture" class="nav-logo-img">
   </a>
   <a href="#handbook" class="nav-cta">Read the Party Playbook</a>
 </nav>
@@ -886,7 +910,7 @@
     <div class="hero-left">
       <span class="hero-stamp">A free resource for newly licensed architects</span>
       <h1>You Earned<br>the <em>Title.</em><br>Celebrate<br>the Moment.</h1>
-      <img src="assets/squiggle-underline.svg" alt="" class="hero-squiggle" aria-hidden="true">
+      <div class="hero-squiggle" aria-hidden="true"></div>
       <p class="hero-sub">Licensure takes years. The celebration should be worth it. A free party playbook with everything you need to mark the milestone properly.</p>
       <a href="#handbook" class="nav-cta" style="display:inline-block; padding: 16px 32px; font-size: 11px;">Read the Party Playbook</a>
     </div>
@@ -938,7 +962,7 @@
         </div>
       </div>
       <div class="doodle-wrap reveal">
-        <img class="doodle-img" src="BK_D_B_Figure%201_2%20Chapter%20Two.png" alt="Energy over time: Architecture declining, everything else rising">
+        <img class="doodle-img" src="BK_D_W__Figure%201_2%20Chapter%20Two.png" alt="Energy over time: Architecture declining, everything else rising">
       </div>
     </div>
   </div>
@@ -1005,7 +1029,7 @@
     </div>
   </div>
   <div class="doodle-wrap center reveal" style="margin-top: 64px;">
-    <img class="doodle-img" src="BK_D_B_Figure%201_4%20Chapter%20Four.png" alt="Normal people: 2D aesthetic. Architects: 8-dimensional aesthetic." style="max-width: 840px;">
+    <img class="doodle-img" src="BK_D_W__Figure%201_4%20Chapter%20Four.png" alt="Normal people: 2D aesthetic. Architects: 8-dimensional aesthetic." style="max-width: 840px;">
   </div>
 </section>
 
@@ -1022,7 +1046,7 @@
         <p>A lot of architects feel something unexpected after licensure. The milestone they worked toward for years is behind them, and the path forward is less obvious than it was before.</p>
         <p>Your market value just changed. Firms value a licensed architect differently — and most people don't know how to use that. If you're asking any version of "what do I do with this now," that's our favorite conversation to have.</p>
         <div class="doodle-wrap reveal" style="margin-top: 48px;">
-          <img class="doodle-img" src="BK_D_B_Figure%203_0%20Part%20Three.png" alt="You are here: tangled web of skills leading to question mark" style="max-width: 720px;">
+          <img class="doodle-img" src="BK_D_W__Figure%203_0%20Part%20Three.png" alt="You are here: tangled web of skills leading to question mark" style="max-width: 720px;">
         </div>
       </div>
       <div>
@@ -1052,10 +1076,10 @@
       <h2 class="section-title">Out of Architecture</h2>
     </div>
     <div class="reveal">
-      <p class="body-text" style="font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--ink); line-height: 1.6;">We are not trying to pull anyone away from architecture. We are trying to give architects more agency over what happens next.</p>
+      <p class="body-text" style="font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--cream); line-height: 1.6;">We are not trying to pull anyone away from architecture. We are trying to give architects more agency over what happens next.</p>
       <p class="body-text" style="margin-top: 28px;">Out of Architecture was founded by Jake Rudin and Erin Pellegrino — both licensed architects whose careers moved well beyond traditional practice. Jake has spent years at the intersection of recruiting, coaching, and architectural talent. Erin brings design and academia. Together they built OOA to support architects at the moments when career, identity, and direction get real.</p>
       <div class="doodle-wrap reveal" style="margin-top: 56px;">
-        <img class="doodle-img" src="BK_D_B_Figure%204_0%20Conclusion.png" alt="End of book, start of journey: bird leaving cage" style="max-width: 760px;">
+        <img class="doodle-img" src="BK_D_W__Figure%204_0%20Conclusion.png" alt="End of book, start of journey: bird leaving cage" style="max-width: 760px;">
       </div>
     </div>
   </div>
@@ -1085,7 +1109,7 @@
     <div class="doc-chapter reveal">
       <span class="chapter-num">01</span>
       <h2 class="chapter-title">This Moment Matters</h2>
-      <img class="doc-doodle" src="BK_D_B_Figure%201_0%20Part%20One.png" alt="The Disconnect">
+      <img class="doc-doodle" src="BK_D_W__Figure%201_0%20Part%20One.png" alt="The Disconnect">
       <div class="doc-body">
         <p>You probably haven't let yourself fully feel this yet.</p>
         <p>There's a specific quality to the weeks after licensure that a lot of architects describe the same way: relief first, then a flatness they weren't expecting. The exam is done. The application is approved. The certificate shows up. And then it's Tuesday.</p>
@@ -1102,7 +1126,7 @@
     <div class="doc-chapter reveal">
       <span class="chapter-num">02</span>
       <h2 class="chapter-title">What You Actually Accomplished</h2>
-      <img class="doc-doodle" src="BK_D_B_Figure%202_0%20Part%20Two.png" alt="School and Practice: the overlap is internships">
+      <img class="doc-doodle" src="BK_D_W__Figure%202_0%20Part%20Two.png" alt="School and Practice: the overlap is internships">
       <div class="doc-body">
         <p>Before any celebration, it helps to say it plainly. Here is what licensure actually required.</p>
 
@@ -1164,7 +1188,7 @@
     <div class="doc-chapter reveal">
       <span class="chapter-num">04</span>
       <h2 class="chapter-title">The Licensure Ritual</h2>
-      <img class="doc-doodle" src="BK_D_B_Figure%201_3%20Chapter%20Three.png" alt="Hope over time in the real world">
+      <img class="doc-doodle" src="BK_D_W__Figure%201_3%20Chapter%20Three.png" alt="Hope over time in the real world">
       <div class="doc-body">
         <p>What follows is a short ceremony. It can be read aloud by someone who cares about the person being celebrated. It can be read by the licensed architect themselves. It can be read silently before the rest of the night begins.</p>
         <p>It is not a performance. It is a frame for naming what happened honestly before moving on.</p>
@@ -1248,15 +1272,15 @@
     <div class="doc-chapter reveal" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
       <span class="chapter-num">07</span>
       <h2 class="chapter-title">A Note from OOA</h2>
-      <img class="doc-doodle" src="BK_D_B_Figure%203_0%20Part%20Three.png" alt="You are here: where does the path go from licensure?">
+      <img class="doc-doodle" src="BK_D_W__Figure%203_0%20Part%20Three.png" alt="You are here: where does the path go from licensure?">
       <div class="doc-body">
         <p>Out of Architecture exists because a lot of licensed architects reach this moment and feel something they weren't expecting. Pride, yes. Relief, definitely. And also a question that doesn't have an obvious answer: what now?</p>
         <p>Licensure changes things. It changes your market value. It changes your professional standing. It opens up paths that weren't available before. But the architectural profession doesn't always do a great job of helping people understand that. The conversation about what a credential is actually worth tends to happen in private, if it happens at all.</p>
         <p>We made this playbook because licensure deserves to be celebrated. We share the resources we do because architects deserve to navigate their careers from a position of information and agency, not just institutional habit.</p>
         <p>If you find yourself asking what you want to do with the credential now — that's a question we work on every day. We'd love to have that conversation.</p>
         <p>But tonight is not for that. Tonight is for this.</p>
-        <p style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; font-style: italic; color: var(--ink); margin-top: 40px; line-height: 1.5;">Congratulations. You earned it. Celebrate it properly.</p>
-        <p style="margin-top: 32px; font-size: 14px; color: var(--warm-gray);">Jake Rudin and Erin Pellegrino<br>Out of Architecture</p>
+        <p style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; font-style: italic; color: var(--cream); margin-top: 40px; line-height: 1.5;">Congratulations. You earned it. Celebrate it properly.</p>
+        <p style="margin-top: 32px; font-size: 14px; color: var(--muted);">Jake Rudin and Erin Pellegrino<br>Out of Architecture</p>
         <a href="https://www.outofarchitecture.com/scheduling" class="btn-collective" style="display:inline-block; margin-top: 32px;">Book a Call</a>
       </div>
     </div>
@@ -1275,7 +1299,7 @@
 <!-- FOOTER -->
 <footer>
   <a href="https://outofarchitecture.com" class="footer-logo">
-    <img src="assets/OOA_Logo_OneLine_black.png" alt="Out of Architecture" class="footer-logo-img">
+    <img src="assets/OOA_Logo_OneLine_white.png" alt="Out of Architecture" class="footer-logo-img">
   </a>
   <span class="footer-copy">© 2026 Out of Architecture. All rights reserved.</span>
 </footer>
