@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>You Earned the Title. Celebrate the Moment. | Out of Architecture</title>
+<title>How to Celebrate Passing the ARE | The Licensure Party Playbook | Out of Architecture</title>
 
 <!-- Google Analytics (GA4) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-08WPVDRJJ9"></script>
@@ -13,1065 +13,930 @@
   gtag('js', new Date());
   gtag('config', 'G-08WPVDRJJ9');
 </script>
-<meta name="description" content="A free party playbook for newly licensed architects. How to actually celebrate the milestone you spent years earning.">
-<meta name="keywords" content="architect licensure celebration, ARE exam passed, licensed architect party, how to celebrate passing ARE, architect license party ideas, newly licensed architect">
+
+<meta name="description" content="A free playbook for newly licensed architects: three celebration formats, a licensure ritual, toasts you can actually read aloud, and what the credential is worth in a salary conversation.">
 
 <!-- Open Graph / LinkedIn -->
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Out of Architecture">
 <meta property="og:url" content="https://licensed.outofarchitecture.com">
 <meta property="og:title" content="You Earned the Title. Celebrate It.">
 <meta property="og:description" content="A free party playbook for newly licensed architects. Because a LinkedIn update and a card from the office isn't enough.">
-<meta property="og:image" content="https://raw.githubusercontent.com/jakeatooa/licensed/main/og-image.png">
+<meta property="og:image" content="https://licensed.outofarchitecture.com/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://licensed.outofarchitecture.com">
 <meta name="twitter:title" content="You Earned the Title. Celebrate It.">
 <meta name="twitter:description" content="A free party playbook for newly licensed architects. Because a LinkedIn update and a card from the office isn't enough.">
-<meta name="twitter:image" content="https://raw.githubusercontent.com/jakeatooa/licensed/main/og-image.png">
+<meta name="twitter:image" content="https://licensed.outofarchitecture.com/og-image.png">
 
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="canonical" href="https://licensed.outofarchitecture.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" href="fonts/DINPro-Light.woff2" as="font" type="font/woff2" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "The Licensure Party Playbook",
+  "description": "A free guide for newly licensed architects on how to celebrate passing the ARE, including three celebration formats, a licensure ritual, toasts, and what the credential is worth.",
+  "image": "https://licensed.outofarchitecture.com/og-image.png",
+  "url": "https://licensed.outofarchitecture.com",
+  "inLanguage": "en",
+  "isAccessibleForFree": true,
+  "author": [
+    { "@type": "Person", "name": "Jake Rudin" },
+    { "@type": "Person", "name": "Erin Pellegrino" }
+  ],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Out of Architecture",
+    "url": "https://www.outofarchitecture.com"
+  }
+}
+</script>
+
 <style>
-  @font-face { font-family:'DINPro'; src:url('fonts/DINPro-Light.otf') format('opentype'); font-weight:300; font-style:normal; font-display:swap; }
-  @font-face { font-family:'DINPro'; src:url('fonts/DINPro-Regular.otf') format('opentype'); font-weight:400; font-style:normal; font-display:swap; }
-  @font-face { font-family:'DINPro'; src:url('fonts/DINPro-Medium.otf') format('opentype'); font-weight:500; font-style:normal; font-display:swap; }
-  @font-face { font-family:'DINPro'; src:url('fonts/DINPro-Bold.otf') format('opentype'); font-weight:700; font-style:normal; font-display:swap; }
+  @font-face { font-family:'DINPro'; src:url('fonts/DINPro-Light.woff2') format('woff2'); font-weight:300; font-style:normal; font-display:swap; }
+  @font-face { font-family:'DINPro'; src:url('fonts/DINPro-Regular.woff2') format('woff2'); font-weight:400; font-style:normal; font-display:swap; }
+  @font-face { font-family:'DINPro'; src:url('fonts/DINPro-Medium.woff2') format('woff2'); font-weight:500; font-style:normal; font-display:swap; }
 
   :root {
-    --bg: #000000;
-    --surface: #16130D;
-    --cream: #FDFAF4;
+    /* Palette — matched to outofarchitecture.com design tokens */
+    --gold: #c1a057;
+    --gold-dark: #ac894c;
+    --gold-muted: #937540;
+    --cream: #fcf8f5;
     --ink: #111009;
+    --surface-dark: #0b0b0b;
+    --near-black: #14120f;
     --warm-gray: #6B6455;
-    --muted: #B8AF9B;
-    --rule: rgba(255,255,255,0.08);
-    --accent: #C4962A;
-    --accent-light: #D9B461;
-    --section-pad: clamp(80px, 10vw, 140px);
+
+    --on-dark-1: #fcf8f5;
+    --on-dark-2: #a6a4a3;
+    --on-dark-3: #878685;
+
+    --rule-dark: rgba(255,255,255,0.09);
+    --rule-light: rgba(17,16,9,0.12);
+
+    /* Structure — matched to outofarchitecture.com */
+    --section-radius: 2rem;
+    --card-radius: 1rem;
+    --section-px: clamp(1.25rem, 5vw, 6.25rem);
+    --section-py: clamp(3rem, 6vw, 7rem);
+    --container-max: 72rem;
+    --prose-max: 48rem;
+    --nav-height: 4.5rem;
+    --page-gutter: clamp(0.75rem, 2.5vw, 2rem);
+
+    /* Fluid type — matched to outofarchitecture.com */
+    --text-caption: clamp(.5625rem, .43rem + .22vw, .6875rem);
+    --text-label: clamp(.625rem, .49rem + .22vw, .75rem);
+    --text-ui: clamp(.6875rem, .54rem + .24vw, .8125rem);
+    --text-body-sm: clamp(.8125rem, .65rem + .26vw, .9375rem);
+    --text-body: clamp(.875rem, .68rem + .31vw, 1.0625rem);
+    --text-body-lg: clamp(.9375rem, .69rem + .4vw, 1.125rem);
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { font-size: 16px; scroll-behavior: smooth; }
+  html { font-size: 16px; scroll-behavior: smooth; scroll-padding-top: calc(var(--nav-height) + 1rem); }
 
   body {
-    background: var(--bg);
-    color: var(--cream);
-    font-family: 'DINPro', sans-serif;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'DINPro', 'Avenir Next', ui-sans-serif, system-ui, sans-serif;
     font-weight: 300;
     line-height: 1.7;
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
   }
 
-  /* NAV */
+  a { color: inherit; }
+
+  /* ---------- READING PROGRESS ---------- */
+  .progress {
+    position: fixed;
+    top: 0; left: 0;
+    height: 2px;
+    width: 0;
+    background: var(--gold);
+    z-index: 200;
+    transition: width 0.1s linear;
+    pointer-events: none;
+  }
+
+  /* ---------- NAV ---------- */
   nav {
-    padding: 24px clamp(24px, 5vw, 80px);
+    height: var(--nav-height);
+    padding: 0 var(--section-px);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--rule);
+    gap: 16px;
     position: sticky;
     top: 0;
-    background: var(--bg);
+    background: rgba(252,248,245,0.92);
+    backdrop-filter: saturate(150%) blur(10px);
+    border-bottom: 1px solid var(--rule-light);
     z-index: 100;
   }
 
-  .nav-logo {
-    font-family: 'DINPro', sans-serif;
-    font-size: 11px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--muted);
-    text-decoration: none;
-  }
+  .nav-logo { display: flex; align-items: center; text-decoration: none; flex-shrink: 1; min-width: 0; }
+  .nav-logo-img { height: 20px; width: auto; display: block; max-width: 100%; }
 
-  .nav-cta {
-    font-family: 'DINPro', sans-serif;
+  .nav-right { display: flex; align-items: center; gap: clamp(12px, 2.5vw, 28px); flex-shrink: 0; }
+
+  .nav-link {
+    font-size: var(--text-ui);
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--warm-gray);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+  .nav-link:hover { color: var(--ink); }
+  @media (max-width: 600px) { .nav-link { display: none; } }
+
+  /* ---------- BUTTONS ---------- */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: inherit;
     font-weight: 500;
-    font-size: 10px;
+    font-size: var(--text-label);
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: var(--ink);
-    background: var(--accent);
-    padding: 12px 22px;
     text-decoration: none;
-    transition: opacity 0.2s;
+    padding: 14px 24px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: opacity 0.2s, background-color 0.2s, color 0.2s;
   }
-  .nav-cta:hover { opacity: 0.85; }
+  .btn-gold { background: var(--gold); color: var(--ink); }
+  .btn-gold:hover { background: var(--gold-dark); }
+  .btn-outline-dark { border-color: rgba(255,255,255,0.28); color: var(--on-dark-1); }
+  .btn-outline-dark:hover { border-color: var(--gold); color: var(--gold); }
+  .btn-outline-light { border-color: var(--rule-light); color: var(--ink); }
+  .btn-outline-light:hover { border-color: var(--ink); }
+  .btn-sm { padding: 10px 16px; letter-spacing: 0.1em; }
 
-  /* HERO */
-  .hero {
-    padding: var(--section-pad) clamp(24px, 5vw, 80px);
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: center;
-    min-height: 80vh;
-  }
+  .btn-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 
-  @media (max-width: 768px) {
-    .hero { grid-template-columns: 1fr; gap: 48px; min-height: auto; }
-  }
-
-  .hero-stamp {
-    font-family: 'DINPro', sans-serif;
-    font-size: 10px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 24px;
-    display: block;
-  }
-
-  h1 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(48px, 6vw, 80px);
-    font-weight: 300;
-    line-height: 1.05;
-    letter-spacing: -0.02em;
-    margin-bottom: 28px;
-  }
-
-  h1 em {
-    font-style: italic;
-    color: var(--accent);
-  }
-
-  .hero-sub {
-    font-size: 17px;
-    font-weight: 300;
-    color: var(--muted);
-    line-height: 1.7;
-    max-width: 400px;
-    margin-bottom: 40px;
-  }
-
-  .hero-visual {
-    position: relative;
-  }
-
-  .hero-card {
-    background: var(--ink);
-    color: var(--cream);
-    padding: 56px 48px;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .hero-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: var(--accent);
-  }
-
-  .hero-card-label {
-    font-family: 'DINPro', sans-serif;
-    font-size: 9px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 32px;
-  }
-
-  .hero-card h2 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 28px;
-    font-weight: 300;
-    line-height: 1.3;
-    margin-bottom: 32px;
-    color: var(--cream);
-  }
-
-  .playbook-toc {
-    list-style: none;
-    border-top: 1px solid rgba(255,255,255,0.1);
-  }
-
-  .playbook-toc li {
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.07);
-    font-size: 13px;
-    font-weight: 300;
-    color: rgba(245,240,232,0.7);
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-
-  .playbook-toc li .toc-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-weight: 300;
-    color: var(--accent);
-    flex-shrink: 0;
-  }
-
-  .badge {
-    font-family: 'DINPro', sans-serif;
-    font-size: 9px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    background: var(--accent);
-    color: var(--cream);
-    padding: 3px 8px;
-    margin-top: 32px;
+  .soft-link {
+    font-size: var(--text-body-sm);
+    color: var(--on-dark-3);
+    text-decoration: none;
     display: inline-block;
   }
+  .soft-link u { color: var(--on-dark-1); text-decoration-color: var(--gold-muted); text-underline-offset: 3px; }
+  .soft-link:hover u { color: var(--gold); }
 
-  /* SECTIONS */
-  section {
-    padding: var(--section-pad) clamp(24px, 5vw, 80px);
-    max-width: 1200px;
-    margin: 0 auto;
-  }
+  /* ---------- LAYOUT PRIMITIVES ---------- */
+  .band { padding: var(--section-py) var(--section-px); }
+  .wrap { max-width: var(--container-max); margin: 0 auto; }
 
-  .section-rule {
-    border: none;
-    border-top: 1px solid var(--rule);
-    margin: 0 clamp(24px, 5vw, 80px);
+  .slab {
+    background: var(--surface-dark);
+    color: var(--on-dark-1);
+    border-radius: var(--section-radius);
+    margin: 0 var(--page-gutter);
+    overflow: hidden;
   }
+  .slab-inner { padding: clamp(2rem, 5vw, 4.5rem) clamp(1.5rem, 5vw, 4.5rem); max-width: var(--container-max); margin: 0 auto; }
 
   .section-label {
-    font-family: 'DINPro', sans-serif;
     font-weight: 500;
-    font-size: 10px;
+    font-size: var(--text-label);
     letter-spacing: 0.18em;
     text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 40px;
+    color: var(--warm-gray);
+    margin-bottom: 28px;
     display: block;
   }
+  .section-label::before { content: '———— '; color: var(--gold); letter-spacing: 0.05em; }
+  .on-dark .section-label { color: var(--on-dark-3); }
 
-  .section-label::before {
-    content: '———— ';
-    color: var(--accent);
-    letter-spacing: 0.05em;
+  h1, h2, h3, h4, h5 { font-family: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif; font-weight: 300; }
+
+  h1 {
+    font-size: clamp(44px, 6vw, 76px);
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
   }
+  h1 em { font-style: italic; color: var(--gold); }
 
   h2.section-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(32px, 4vw, 52px);
-    font-weight: 300;
+    font-size: clamp(30px, 4vw, 48px);
     line-height: 1.15;
     letter-spacing: -0.01em;
-    max-width: 640px;
-    margin-bottom: 32px;
+    max-width: 22ch;
+    margin-bottom: 28px;
   }
 
   .body-text {
-    font-size: 16px;
-    font-weight: 300;
-    color: var(--muted);
-    line-height: 1.8;
-    max-width: 560px;
-  }
-
-  /* WHY THIS EXISTS */
-  .why-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    align-items: start;
-  }
-
-  @media (max-width: 768px) {
-    .why-grid { grid-template-columns: 1fr; gap: 40px; }
-  }
-
-  .stat-block {
-    border-top: 1px solid var(--rule);
-    padding-top: 24px;
-    margin-top: 48px;
-  }
-
-  .stat-item {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 28px;
-    align-items: baseline;
-  }
-
-  .stat-number {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 42px;
-    font-weight: 300;
-    color: var(--accent);
-    line-height: 1;
-    flex-shrink: 0;
-    width: 80px;
-  }
-
-  .stat-text {
-    font-size: 14px;
-    color: var(--muted);
-    line-height: 1.6;
-  }
-
-  /* WHATS INSIDE */
-  .inside-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
-    margin-top: 56px;
-  }
-
-  @media (max-width: 900px) {
-    .inside-grid { grid-template-columns: 1fr; }
-  }
-
-  .inside-card {
-    background: var(--surface);
-    color: var(--cream);
-    padding: 40px 36px;
-    position: relative;
-  }
-
-  .inside-card-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(44px, 5vw, 64px);
-    font-weight: 300;
-    letter-spacing: -0.02em;
-    color: var(--accent);
-    display: block;
-    line-height: 0.9;
-    margin-bottom: 16px;
-  }
-
-  .inside-card h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 400;
-    color: var(--cream);
-    margin-bottom: 12px;
-    line-height: 1.2;
-  }
-
-  .inside-card p {
-    font-size: 13px;
-    color: rgba(245,240,232,0.6);
-    font-weight: 300;
-    line-height: 1.7;
-  }
-
-  /* WHO ITS FOR */
-  .who-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 48px;
-    margin-top: 56px;
-  }
-
-  @media (max-width: 768px) {
-    .who-grid { grid-template-columns: 1fr; gap: 32px; }
-  }
-
-  .who-item {
-    border-top: 2px solid var(--rule);
-    padding-top: 24px;
-  }
-
-  .who-item.accent { border-top-color: var(--accent); }
-
-  .who-item h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 400;
-    margin-bottom: 12px;
-    line-height: 1.2;
-  }
-
-  .who-item p {
-    font-size: 13px;
-    color: var(--muted);
-    line-height: 1.7;
-  }
-
-
-  /* WHATS NEXT */
-  .next-section {
-    background: var(--cream);
-    color: var(--ink);
-  }
-
-  .next-section .section-label { color: var(--ink); opacity: 0.7; }
-  .next-section .section-label::before { color: var(--ink); }
-  .next-section h2.section-title { color: var(--ink); }
-
-  .next-section .section-rule-top {
-    border-top: 3px solid var(--accent);
-    margin-bottom: 0;
-  }
-
-  .next-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: var(--section-pad) clamp(24px, 5vw, 80px);
-  }
-
-  .next-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 80px;
-    margin-top: 56px;
-    align-items: start;
-  }
-
-  @media (max-width: 768px) {
-    .next-grid { grid-template-columns: 1fr; gap: 48px; }
-  }
-
-  .next-text h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 16px;
-    line-height: 1.2;
-  }
-
-  .next-text p {
-    font-size: 15px;
+    font-size: var(--text-body);
     color: var(--warm-gray);
     line-height: 1.8;
-    margin-bottom: 16px;
+    max-width: 60ch;
   }
+  .on-dark .body-text { color: var(--on-dark-2); }
 
-  .collective-card {
-    background: var(--ink);
-    color: var(--cream);
-    padding: 48px;
-    position: relative;
-    overflow: hidden;
+  /* ---------- HERO ---------- */
+  .hero-slab { margin-top: var(--page-gutter); }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 1fr;
+    gap: clamp(32px, 5vw, 72px);
+    align-items: center;
   }
+  @media (max-width: 900px) { .hero-grid { grid-template-columns: 1fr; gap: 40px; } }
 
-  .collective-card::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: var(--accent);
-  }
-
-  .collective-card .section-label { color: var(--accent); margin-bottom: 24px; }
-
-  .collective-card h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 28px;
-    font-weight: 300;
-    color: var(--cream);
-    margin-bottom: 20px;
-    line-height: 1.2;
-  }
-
-  .collective-card p {
-    font-size: 14px;
-    color: rgba(245,240,232,0.65);
-    line-height: 1.8;
-    margin-bottom: 32px;
-  }
-
-  .collective-features {
-    list-style: none;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    margin-bottom: 36px;
-  }
-
-  .collective-features li {
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255,255,255,0.07);
-    font-size: 13px;
-    color: rgba(245,240,232,0.7);
-    display: flex;
-    gap: 10px;
-    align-items: baseline;
-  }
-
-  .collective-features li::before {
-    content: '—';
-    color: var(--accent);
-    font-family: 'DINPro', sans-serif;
-    font-size: 10px;
-    flex-shrink: 0;
-  }
-
-  .btn-collective {
-    display: inline-block;
-    background: var(--accent);
-    color: var(--ink);
-    font-family: 'DINPro', sans-serif;
-    font-weight: 500;
-    font-size: 10px;
-    letter-spacing: 0.15em;
+  .hero-stamp {
+    font-size: var(--text-label);
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    padding: 16px 28px;
-    text-decoration: none;
-    transition: opacity 0.2s;
-  }
-
-  .btn-collective:hover { opacity: 0.85; }
-
-  .nav-logo-img {
-    height: 22px;
-    width: auto;
+    color: var(--gold);
+    margin-bottom: 20px;
     display: block;
   }
 
-  .footer-logo-img {
-    height: 18px;
-    width: auto;
-    display: block;
-    opacity: 0.5;
+  .hero-sub {
+    font-size: var(--text-body-lg);
+    color: var(--on-dark-2);
+    line-height: 1.7;
+    max-width: 42ch;
+    margin-bottom: 32px;
   }
 
   .hero-squiggle {
     display: block;
-    width: 220px;
-    height: 21px;
-    margin-bottom: 32px;
-    margin-top: -16px;
-    background-color: var(--cream);
+    width: min(220px, 60%);
+    height: 19px;
+    margin: -8px 0 28px;
+    background-color: var(--on-dark-1);
     -webkit-mask-image: url('assets/squiggle-underline.svg');
     mask-image: url('assets/squiggle-underline.svg');
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
-    -webkit-mask-size: 100% 100%;
-    mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat; mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%; mask-size: 100% 100%;
   }
 
-  /* ABOUT OOA */
-  .about-section {
-    border-top: 1px solid var(--rule);
+  /* TOC card inside hero */
+  .toc-card {
+    border: 1px solid var(--rule-dark);
+    border-radius: var(--card-radius);
+    padding: clamp(24px, 3vw, 36px);
+    background: var(--near-black);
+  }
+  .toc-card-label {
+    font-size: var(--text-caption);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--on-dark-3);
+    margin-bottom: 20px;
+  }
+  .toc-card h2 {
+    font-size: clamp(20px, 2.2vw, 26px);
+    line-height: 1.3;
+    margin-bottom: 24px;
+    color: var(--on-dark-1);
+  }
+  .playbook-toc { list-style: none; border-top: 1px solid var(--rule-dark); }
+  .playbook-toc a {
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: var(--text-body-sm);
+    color: var(--on-dark-2);
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .playbook-toc a:hover { color: var(--gold); }
+  .toc-num {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 17px;
+    color: var(--gold);
+    flex-shrink: 0;
+    width: 1.6em;
+  }
+  .badge {
+    font-size: var(--text-caption);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: var(--gold);
+    color: var(--ink);
+    padding: 4px 10px;
+    margin-top: 24px;
+    display: inline-block;
+    border-radius: 2px;
+    font-weight: 500;
   }
 
-  .about-grid {
+  /* Hero stat row */
+  .stat-row {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 80px;
-    align-items: start;
+    grid-template-columns: repeat(3, 1fr);
+    gap: clamp(20px, 3vw, 48px);
+    margin-top: clamp(40px, 5vw, 64px);
+    padding-top: clamp(28px, 3vw, 40px);
+    border-top: 1px solid var(--rule-dark);
+  }
+  @media (max-width: 680px) { .stat-row { grid-template-columns: 1fr; gap: 24px; } }
+  .stat-number {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(34px, 4.5vw, 46px);
+    color: var(--gold);
+    line-height: 1;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .stat-text { font-size: var(--text-body-sm); color: var(--on-dark-2); line-height: 1.55; display: block; max-width: 30ch; }
+
+  /* ---------- DOODLES ---------- */
+  .doodle-wrap { margin: 48px 0 0; }
+  .doodle-wrap.center { text-align: center; }
+  .doodle-img { max-width: 640px; width: 100%; height: auto; display: block; }
+  .doodle-wrap.center .doodle-img { margin: 0 auto; }
+  .doc-doodle { max-width: 460px; width: 100%; height: auto; display: block; margin: 0 auto 40px; }
+
+  /* ---------- TWO-COLUMN SECTIONS ---------- */
+  .split-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 5vw, 80px); align-items: start; }
+  @media (max-width: 860px) { .split-grid { grid-template-columns: 1fr; gap: 36px; } }
+
+  /* ---------- WHAT'S INSIDE ---------- */
+  .inside-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 48px; }
+  @media (max-width: 980px) { .inside-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 620px) { .inside-grid { grid-template-columns: 1fr; } }
+
+  .inside-card {
+    background: var(--surface-dark);
+    color: var(--on-dark-1);
+    border-radius: var(--card-radius);
+    padding: clamp(24px, 2.6vw, 36px);
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.25s, transform 0.25s;
+  }
+  .inside-card:hover { background: var(--near-black); transform: translateY(-3px); }
+  .inside-card-num {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(38px, 4vw, 54px);
+    letter-spacing: -0.02em;
+    color: var(--gold);
+    display: block;
+    line-height: 0.9;
+    margin-bottom: 14px;
+  }
+  .inside-card h3 { font-size: clamp(19px, 2vw, 22px); font-weight: 400; color: var(--on-dark-1); margin-bottom: 10px; line-height: 1.2; }
+  .inside-card p { font-size: var(--text-body-sm); color: var(--on-dark-2); line-height: 1.65; }
+
+  /* ---------- WHO IT'S FOR ---------- */
+  .who-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(28px, 4vw, 48px); margin-top: 48px; }
+  @media (max-width: 860px) { .who-grid { grid-template-columns: 1fr; gap: 28px; } }
+  .who-item { border-top: 2px solid var(--rule-light); padding-top: 22px; }
+  .who-item.accent { border-top-color: var(--gold); }
+  .who-item h3 { font-size: 22px; font-weight: 400; margin-bottom: 10px; line-height: 1.2; }
+  .who-item p { font-size: var(--text-body-sm); color: var(--warm-gray); line-height: 1.7; }
+
+  /* ---------- NEWSLETTER ---------- */
+  .news-grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
+  @media (max-width: 860px) { .news-grid { grid-template-columns: 1fr; gap: 32px; } }
+  .news-grid h2 { font-size: clamp(26px, 3.2vw, 40px); line-height: 1.15; color: var(--on-dark-1); margin-bottom: 16px; }
+  .news-grid p { font-size: var(--text-body); color: var(--on-dark-2); line-height: 1.75; max-width: 46ch; }
+
+  .news-form { display: flex; flex-wrap: wrap; gap: 10px; }
+  .news-form input[type="email"] {
+    flex: 1 1 220px;
+    min-width: 0;
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.22);
+    border-radius: 2px;
+    color: var(--on-dark-1);
+    font-family: inherit;
+    font-weight: 300;
+    font-size: var(--text-body-sm);
+    padding: 14px 16px;
+  }
+  .news-form input[type="email"]::placeholder { color: var(--on-dark-3); }
+  .news-form input[type="email"]:focus { outline: none; border-color: var(--gold); }
+  .news-note { font-size: var(--text-caption); color: var(--on-dark-3); margin-top: 14px; letter-spacing: 0.04em; }
+  .news-status { font-size: var(--text-body-sm); margin-top: 14px; min-height: 1.2em; }
+  .news-status.ok { color: var(--gold); }
+  .news-status.err { color: #e0a0a0; }
+
+  /* ---------- OFFER CARD ($1 Career Curious) ---------- */
+  .offer-card {
+    background: var(--surface-dark);
+    color: var(--on-dark-1);
+    border-radius: var(--section-radius);
+    padding: clamp(28px, 3.4vw, 48px);
+    position: relative;
+    overflow: hidden;
+  }
+  .offer-card::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); }
+  .offer-card h3 { font-size: clamp(22px, 2.6vw, 30px); color: var(--on-dark-1); margin-bottom: 16px; line-height: 1.2; }
+  .offer-card p { font-size: var(--text-body-sm); color: var(--on-dark-2); line-height: 1.75; margin-bottom: 26px; }
+
+  .offer-price {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--rule-dark);
+  }
+  .offer-price .amount { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 46px; color: var(--gold); line-height: 1; }
+  .offer-price .term { font-size: var(--text-label); letter-spacing: 0.14em; text-transform: uppercase; color: var(--on-dark-3); }
+
+  .feature-list { list-style: none; border-top: 1px solid var(--rule-dark); margin-bottom: 30px; }
+  .feature-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: var(--text-body-sm);
+    color: var(--on-dark-2);
+    display: flex; gap: 10px; align-items: baseline;
+  }
+  .feature-list li::before { content: '—'; color: var(--gold); font-family: 'DINPro', sans-serif; font-size: 10px; flex-shrink: 0; }
+
+  /* ---------- CTA STRIP ---------- */
+  .cta-strip-inner {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: clamp(20px, 4vw, 48px); flex-wrap: wrap;
+  }
+  .cta-strip-inner h3 { font-size: clamp(22px, 3vw, 34px); color: var(--on-dark-1); line-height: 1.2; }
+
+  /* ---------- HANDBOOK ---------- */
+  .handbook-slab { margin-top: var(--page-gutter); margin-bottom: var(--page-gutter); }
+  .playbook-doc { max-width: var(--prose-max); margin: 0 auto; }
+
+  .doc-header { text-align: center; padding-bottom: 56px; border-bottom: 1px solid var(--rule-dark); margin-bottom: 56px; }
+  .doc-header .section-label { text-align: center; }
+  .doc-title { font-size: clamp(34px, 5vw, 56px); line-height: 1.1; letter-spacing: -0.02em; margin: 20px 0 14px; color: var(--on-dark-1); }
+  .doc-sub { font-family: 'Cormorant Garamond', Georgia, serif; font-style: italic; font-size: 20px; color: var(--on-dark-2); }
+
+  .doc-chapter { margin-bottom: 64px; padding-bottom: 64px; border-bottom: 1px solid var(--rule-dark); scroll-margin-top: calc(var(--nav-height) + 2rem); }
+  .chapter-num {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(56px, 8vw, 92px);
+    letter-spacing: -0.03em;
+    color: var(--gold);
+    display: block;
+    line-height: 0.9;
+    margin-bottom: 14px;
+  }
+  .chapter-title { font-size: clamp(25px, 3.5vw, 38px); line-height: 1.1; letter-spacing: -0.01em; margin-bottom: 30px; color: var(--on-dark-1); }
+
+  .doc-body { font-size: var(--text-body); line-height: 1.85; color: var(--on-dark-1); font-weight: 300; }
+  .doc-body p { margin-bottom: 18px; }
+  .doc-body h4 { font-size: 22px; font-weight: 400; margin: 38px 0 14px; color: var(--on-dark-1); }
+
+  .archetype-block {
+    border-left: 2px solid var(--gold);
+    border-radius: 0 var(--card-radius) var(--card-radius) 0;
+    padding: 24px 28px;
+    margin: 30px 0;
+    background: rgba(193,160,87,0.08);
+  }
+  .archetype-block h5 { font-size: 20px; font-weight: 600; margin-bottom: 6px; }
+  .archetype-block .archetype-meta {
+    font-family: 'DINPro', sans-serif;
+    font-size: var(--text-caption);
+    color: var(--on-dark-3);
+    letter-spacing: 0.1em;
+    margin-bottom: 12px;
+    text-transform: uppercase;
   }
 
-  @media (max-width: 768px) {
-    .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .ritual-block { background: var(--near-black); border-radius: var(--card-radius); padding: clamp(24px, 4vw, 44px); margin: 30px 0; }
+  .ritual-block p { color: rgba(252,248,245,0.85); line-height: 2; }
+  .ritual-block p.ritual-step {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    border-top: 1px solid var(--rule-dark);
+    padding-top: 18px; margin-top: 18px;
+    color: var(--on-dark-1);
   }
 
+  .script-block {
+    border: 1px solid var(--rule-dark);
+    border-radius: var(--card-radius);
+    padding: 26px 30px;
+    margin: 22px 0;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 18px;
+    line-height: 1.8;
+    color: var(--on-dark-1);
+  }
+  .script-block .script-label {
+    font-family: 'DINPro', sans-serif;
+    font-size: var(--text-caption);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-style: normal;
+    display: block;
+    margin-bottom: 14px;
+  }
+
+  .handbook-cta-close {
+    background: var(--near-black);
+    border-radius: var(--section-radius);
+    padding: clamp(28px, 4vw, 52px);
+    margin-top: 64px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .handbook-cta-close::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px; background: var(--gold); }
+  .handbook-cta-close .section-label { text-align: center; }
+  .handbook-cta-close p {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(19px, 2.4vw, 23px);
+    font-style: italic;
+    color: rgba(252,248,245,0.82);
+    margin: 0 auto 28px;
+    line-height: 1.6;
+    max-width: 52ch;
+  }
+  .handbook-cta-close .btn-row { justify-content: center; }
+
+  /* ---------- CHAPTER RAIL (scroll-spy) ---------- */
+  .chapter-rail {
+    position: fixed;
+    right: clamp(14px, 2vw, 30px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s ease, visibility 0.35s;
+  }
+  .chapter-rail.active { opacity: 1; visibility: visible; }
+  @media (max-width: 1100px) { .chapter-rail { display: none; } }
+
+  .rail-dot { position: relative; display: block; width: 22px; height: 12px; }
+  .rail-dot::after {
+    content: '';
+    position: absolute; right: 3px; top: 3px;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: rgba(17,16,9,0.22);
+    transition: background-color 0.25s, transform 0.25s;
+  }
+  .rail-dot.on::after { background: var(--gold); transform: scale(1.5); }
+  .rail-dot .rail-tip {
+    position: absolute;
+    right: 26px; top: 50%;
+    transform: translateY(-50%);
+    white-space: nowrap;
+    font-size: var(--text-caption);
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    background: var(--cream);
+    border: 1px solid var(--rule-light);
+    border-radius: 2px;
+    padding: 4px 9px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s;
+  }
+  .rail-dot:hover .rail-tip { opacity: 1; }
+
+  /* ---------- ABOUT / FOOTER ---------- */
+  .about-grid { display: grid; grid-template-columns: 1fr 2fr; gap: clamp(28px, 5vw, 80px); align-items: start; }
+  @media (max-width: 860px) { .about-grid { grid-template-columns: 1fr; gap: 32px; } }
   .about-grid h2.section-title { max-width: none; }
+  .pull-quote {
+    font-style: italic;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: clamp(20px, 2.4vw, 25px);
+    color: var(--ink);
+    line-height: 1.5;
+    max-width: 34ch;
+  }
 
-  /* FOOTER */
   footer {
-    border-top: 1px solid var(--rule);
-    padding: 40px clamp(24px, 5vw, 80px);
+    border-top: 1px solid var(--rule-light);
+    padding: 32px var(--section-px);
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     gap: 16px;
   }
-
-  .footer-logo {
-    font-family: 'DINPro', sans-serif;
-    font-size: 10px;
-    letter-spacing: 0.15em;
+  .footer-logo-img { height: 16px; width: auto; display: block; opacity: 0.55; }
+  .footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+  .footer-links a {
+    font-size: var(--text-caption);
+    letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--muted);
+    color: var(--warm-gray);
     text-decoration: none;
   }
+  .footer-links a:hover { color: var(--ink); }
+  .footer-copy { font-size: var(--text-caption); color: var(--warm-gray); letter-spacing: 0.08em; }
 
-  .footer-copy {
-    font-family: 'DINPro', sans-serif;
-    font-size: 9px;
-    color: var(--rule);
-    letter-spacing: 0.1em;
+  /* ---------- MOTION ---------- */
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  .hero-left > * { animation: fadeUp 0.8s ease both; }
+  .hero-left > *:nth-child(1) { animation-delay: 0.05s; }
+  .hero-left > *:nth-child(2) { animation-delay: 0.12s; }
+  .hero-left > *:nth-child(3) { animation-delay: 0.19s; }
+  .hero-left > *:nth-child(4) { animation-delay: 0.26s; }
+  .hero-left > *:nth-child(5) { animation-delay: 0.33s; }
+  .hero-visual { animation: fadeUp 0.8s ease 0.22s both; }
+
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .reveal.visible { opacity: 1; transform: translateY(0); }
+  .inside-grid .reveal:nth-child(2) { transition-delay: 0.06s; }
+  .inside-grid .reveal:nth-child(3) { transition-delay: 0.12s; }
+  .inside-grid .reveal:nth-child(4) { transition-delay: 0.18s; }
+  .inside-grid .reveal:nth-child(5) { transition-delay: 0.24s; }
+  .inside-grid .reveal:nth-child(6) { transition-delay: 0.30s; }
+  .who-grid .reveal:nth-child(2) { transition-delay: 0.08s; }
+  .who-grid .reveal:nth-child(3) { transition-delay: 0.16s; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+    .reveal { opacity: 1; transform: none; }
   }
 
-  /* PLAYBOOK MODAL */
-  .playbook-section {
-    background: var(--cream);
-    border-top: 1px solid var(--rule);
-  }
-
-  .playbook-doc {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: var(--section-pad) clamp(24px, 5vw, 40px);
-  }
-
-  .doc-header {
-    text-align: center;
-    padding-bottom: 64px;
-    border-bottom: 1px solid var(--rule);
-    margin-bottom: 64px;
-  }
-
-  .doc-header .section-label { justify-content: center; display: block; text-align: center; }
-
-  .doc-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(36px, 5vw, 60px);
-    font-weight: 300;
-    line-height: 1.1;
-    letter-spacing: -0.02em;
-    margin: 24px 0 16px;
-  }
-
-  .doc-sub {
-    font-size: 15px;
-    color: var(--muted);
-    font-style: italic;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-  }
-
-  .doc-chapter {
-    margin-bottom: 72px;
-    padding-bottom: 72px;
-    border-bottom: 1px solid var(--rule);
-  }
-
-  .chapter-num {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(64px, 8vw, 100px);
-    font-weight: 300;
-    letter-spacing: -0.03em;
-    color: var(--accent);
-    display: block;
-    line-height: 0.9;
-    margin-bottom: 16px;
-  }
-
-  .chapter-title {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(26px, 3.5vw, 40px);
-    font-weight: 300;
-    line-height: 1.1;
-    letter-spacing: -0.01em;
-    margin-bottom: 32px;
-  }
-
-  .doc-body {
-    font-size: 16px;
-    line-height: 1.85;
-    color: var(--cream);
-    font-weight: 300;
-  }
-
-  .doc-body p { margin-bottom: 20px; }
-
-  .doc-body h4 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-weight: 400;
-    margin: 40px 0 16px;
-    color: var(--cream);
-  }
-
-  .archetype-block {
-    border-left: 2px solid var(--accent);
-    padding: 24px 28px;
-    margin: 32px 0;
-    background: rgba(196,150,42,0.08);
-  }
-
-  .archetype-block h5 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 8px;
-  }
-
-  .archetype-block .archetype-meta {
-    font-family: 'DINPro', sans-serif;
-    font-size: 10px;
-    color: var(--muted);
-    letter-spacing: 0.1em;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-  }
-
-  .ritual-block {
-    background: var(--ink);
-    color: var(--cream);
-    padding: 48px;
-    margin: 32px 0;
-  }
-
-  .ritual-block p {
-    color: rgba(245,240,232,0.85);
-    line-height: 2;
-  }
-
-  .ritual-block p.ritual-step {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    font-style: italic;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    padding-top: 20px;
-    margin-top: 20px;
-    color: var(--cream);
-  }
-
-  .script-block {
-    border: 1px solid var(--rule);
-    padding: 28px 32px;
-    margin: 24px 0;
-    font-style: italic;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 18px;
-    line-height: 1.8;
-    color: var(--cream);
-  }
-
-  .script-block .script-label {
-    font-family: 'DINPro', sans-serif;
-    font-size: 9px;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-    color: var(--accent);
-    font-style: normal;
-    display: block;
-    margin-bottom: 16px;
-  }
-
-  /* DOODLE IMAGES */
-  .doodle-wrap {
-    margin: 48px 0 0;
-  }
-  .doodle-wrap.center {
-    text-align: center;
-  }
-  .doodle-img {
-    max-width: 640px;
-    width: 100%;
-    height: auto;
-    opacity: 0.9;
-    display: block;
-  }
-  .doodle-wrap.center .doodle-img {
-    margin: 0 auto;
-  }
-  .doc-doodle {
-    max-width: 520px;
-    width: 100%;
-    height: auto;
-    opacity: 0.85;
-    display: block;
-    margin: 0 auto 40px;
-  }
-
-  /* animations */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(24px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  .hero .hero-left > * {
-    animation: fadeUp 0.8s ease both;
-  }
-
-  .hero .hero-left > *:nth-child(1) { animation-delay: 0.1s; }
-  .hero .hero-left > *:nth-child(2) { animation-delay: 0.2s; }
-  .hero .hero-left > *:nth-child(3) { animation-delay: 0.3s; }
-  .hero .hero-left > *:nth-child(4) { animation-delay: 0.4s; }
-
-  .hero-visual { animation: fadeUp 0.8s ease 0.3s both; }
-
-  /* Scroll reveal */
-  .reveal {
-    opacity: 0;
-    transform: translateY(28px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
-  }
-  .reveal.visible {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  .inside-grid .reveal:nth-child(2) { transition-delay: 0.08s; }
-  .inside-grid .reveal:nth-child(3) { transition-delay: 0.16s; }
-  .inside-grid .reveal:nth-child(4) { transition-delay: 0.24s; }
-  .inside-grid .reveal:nth-child(5) { transition-delay: 0.32s; }
-  .inside-grid .reveal:nth-child(6) { transition-delay: 0.40s; }
-  .who-grid .reveal:nth-child(2) { transition-delay: 0.1s; }
-  .who-grid .reveal:nth-child(3) { transition-delay: 0.2s; }
-  .stat-block .reveal:nth-child(2) { transition-delay: 0.1s; }
-  .stat-block .reveal:nth-child(3) { transition-delay: 0.2s; }
-
-  /* PRE-HANDBOOK CTA STRIP */
-  .pre-handbook-cta {
-    background: var(--ink);
-    padding: 56px clamp(24px, 5vw, 80px);
-    border-top: 3px solid var(--accent);
-  }
-
-  .pre-handbook-inner {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-  }
-
-  .pre-handbook-text .section-label {
-    color: var(--accent);
-    margin-bottom: 12px;
-  }
-
-  .pre-handbook-text h3 {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: clamp(24px, 3vw, 36px);
-    font-weight: 300;
-    color: var(--cream);
-    line-height: 1.2;
-    margin: 0;
-  }
-
-  /* HANDBOOK CLOSING CTA */
-  .handbook-cta-close {
-    background: var(--ink);
-    padding: 56px 48px;
-    margin-top: 80px;
-    text-align: center;
-    position: relative;
-  }
-
-  .handbook-cta-close::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 3px;
-    background: var(--accent);
-  }
-
-  .handbook-cta-close .section-label {
-    color: var(--accent);
-    margin-bottom: 20px;
-    display: block;
-    text-align: center;
-  }
-
-  .handbook-cta-close p {
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 22px;
-    font-style: italic;
-    color: rgba(245,240,232,0.8);
-    margin-bottom: 32px;
-    line-height: 1.6;
-    max-width: 540px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+  :focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
 </style>
 </head>
 <body>
 
+<div class="progress" id="progress" aria-hidden="true"></div>
+
 <!-- NAV -->
 <nav>
-  <a href="https://outofarchitecture.com" class="nav-logo">
-    <img src="assets/OOA_Logo_OneLine_white.png" alt="Out of Architecture" class="nav-logo-img">
+  <a href="https://www.outofarchitecture.com" class="nav-logo" data-cta="logo" data-loc="nav">
+    <img src="assets/OOA_Logo_OneLine_black.png" alt="Out of Architecture" class="nav-logo-img" width="688" height="88">
   </a>
-  <a href="#handbook" class="nav-cta">Read the Party Playbook</a>
+  <div class="nav-right">
+    <a href="#handbook" class="nav-link">The Playbook</a>
+    <a href="#newsletter" class="nav-link">Newsletter</a>
+    <a href="https://community.outofarchitecture.com/checkout/career-curious" class="btn btn-gold btn-sm" data-cta="career-curious" data-loc="nav">Start for $1</a>
+  </div>
 </nav>
 
 <!-- HERO -->
-<div style="max-width:1200px; margin:0 auto;">
-  <div class="hero">
-    <div class="hero-left">
-      <span class="hero-stamp">A free resource for newly licensed architects</span>
-      <h1>You Earned<br>the <em>Title.</em><br>Celebrate<br>the Moment.</h1>
-      <div class="hero-squiggle" aria-hidden="true"></div>
-      <p class="hero-sub">Licensure takes years. The celebration should be worth it. A free party playbook with everything you need to mark the milestone properly.</p>
-      <a href="#handbook" class="nav-cta" style="display:inline-block; padding: 16px 32px; font-size: 11px;">Read the Party Playbook</a>
-    </div>
-    <div class="hero-visual">
-      <div class="hero-card">
-        <p class="hero-card-label">The OOA Licensure Party Playbook — Contents</p>
-        <h2>Everything you need to celebrate the way the work deserves.</h2>
-        <ul class="playbook-toc">
-          <li><span class="toc-num">01</span> This Moment Matters</li>
-          <li><span class="toc-num">02</span> What You Actually Accomplished</li>
-          <li><span class="toc-num">03</span> Choose Your Celebration Style</li>
-          <li><span class="toc-num">04</span> The Licensure Ritual</li>
-          <li><span class="toc-num">05</span> What to Say</li>
-          <li><span class="toc-num">06</span> What the License Is Worth</li>
-          <li><span class="toc-num">07</span> A Note from OOA</li>
-        </ul>
-        <span class="badge">Free · No Signup</span>
+<div class="slab hero-slab on-dark">
+  <div class="slab-inner">
+    <div class="hero-grid">
+      <div class="hero-left">
+        <span class="hero-stamp">A free resource for newly licensed architects</span>
+        <h1>You Earned<br>the <em>Title.</em><br>Celebrate<br>the Moment.</h1>
+        <div class="hero-squiggle" aria-hidden="true"></div>
+        <p class="hero-sub">Licensure takes years. The celebration should be worth it. A free party playbook with everything you need to mark the milestone properly.</p>
+        <div>
+          <div class="btn-row">
+            <a href="#handbook" class="btn btn-gold" data-cta="read-playbook" data-loc="hero">Read the Party Playbook</a>
+            <a href="https://community.outofarchitecture.com/checkout/career-curious" class="btn btn-outline-dark" data-cta="career-curious" data-loc="hero">Start for $1</a>
+          </div>
+          <a href="#newsletter" class="soft-link" style="margin-top:18px;" data-cta="newsletter-jump" data-loc="hero">Not celebrating yet? <u>Get career notes in your inbox, free →</u></a>
+        </div>
       </div>
+      <div class="hero-visual">
+        <div class="toc-card">
+          <p class="toc-card-label">The OOA Licensure Party Playbook — Contents</p>
+          <h2>Everything you need to celebrate the way the work deserves.</h2>
+          <ul class="playbook-toc">
+            <li><a href="#ch-01" data-cta="toc" data-loc="hero"><span class="toc-num">01</span> This Moment Matters</a></li>
+            <li><a href="#ch-02" data-cta="toc" data-loc="hero"><span class="toc-num">02</span> What You Actually Accomplished</a></li>
+            <li><a href="#ch-03" data-cta="toc" data-loc="hero"><span class="toc-num">03</span> Choose Your Celebration Style</a></li>
+            <li><a href="#ch-04" data-cta="toc" data-loc="hero"><span class="toc-num">04</span> The Licensure Ritual</a></li>
+            <li><a href="#ch-05" data-cta="toc" data-loc="hero"><span class="toc-num">05</span> What to Say</a></li>
+            <li><a href="#ch-06" data-cta="toc" data-loc="hero"><span class="toc-num">06</span> What the License Is Worth</a></li>
+            <li><a href="#ch-07" data-cta="toc" data-loc="hero"><span class="toc-num">07</span> A Note from OOA</a></li>
+          </ul>
+          <span class="badge">Free · Read it right here</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stat-row">
+      <div><span class="stat-number">5–8</span><span class="stat-text">Years of education and experience required before sitting for the ARE</span></div>
+      <div><span class="stat-number">3,200+</span><span class="stat-text">Hours of documented AXP experience required in the United States</span></div>
+      <div><span class="stat-number">6</span><span class="stat-text">Divisions of the ARE, each requiring months of focused preparation</span></div>
     </div>
   </div>
 </div>
 
-<hr class="section-rule">
-
 <!-- WHY THIS EXISTS -->
-<section>
-  <div class="why-grid">
+<section class="band">
+  <div class="wrap split-grid">
     <div>
       <span class="section-label">Why this exists</span>
       <h2 class="section-title">Architecture's most earned credential goes almost uncelebrated.</h2>
       <div class="doodle-wrap reveal">
-        <img class="doodle-img" src="BK_D_W__Figure%201_2%20Chapter%20Two.png" alt="Energy over time: Architecture declining, everything else rising">
+        <img class="doodle-img" src="assets/doodles/energy-curve-ink.png" alt="Energy over time: Architecture declining, everything else rising" width="1200" height="1200" loading="lazy" decoding="async">
       </div>
     </div>
     <div>
       <p class="body-text">Most architects spend the better part of a decade getting here. Five or more years of education. Thousands of hours of documented experience. Six exams covering everything from site analysis to building systems to project management. Years of invisible labor, stress, and quiet endurance alongside other paying work and actual life.</p>
       <p class="body-text" style="margin-top:20px;">And then it's done. A LinkedIn update. Maybe a card from the office. Then Monday morning again.</p>
+    </div>
+  </div>
+</section>
 
-      <div class="stat-block">
-        <div class="stat-item reveal">
-          <span class="stat-number">5–8</span>
-          <span class="stat-text">Years of education and experience required before sitting for the ARE</span>
-        </div>
-        <div class="stat-item reveal">
-          <span class="stat-number">3,200+</span>
-          <span class="stat-text">Hours of documented AXP experience required in the United States</span>
-        </div>
-        <div class="stat-item reveal">
-          <span class="stat-number">6</span>
-          <span class="stat-text">Divisions of the ARE, each requiring months of focused preparation</span>
-        </div>
+<!-- WHAT'S INSIDE -->
+<section class="band" style="padding-top:0;">
+  <div class="wrap">
+    <span class="section-label">What's inside</span>
+    <h2 class="section-title">A complete guide to celebrating the way you want to.</h2>
+    <div class="inside-grid">
+      <a href="#ch-01" class="inside-card reveal" data-cta="inside-card" data-loc="whats-inside">
+        <span class="inside-card-num">01 — 02</span>
+        <h3>The Acknowledgment</h3>
+        <p>An honest accounting of what licensure actually required. Not romanticized. Not minimized. Written in a way you can read aloud or hand to someone who wants to understand why this matters.</p>
+      </a>
+      <a href="#ch-03" class="inside-card reveal" data-cta="inside-card" data-loc="whats-inside">
+        <span class="inside-card-num">03</span>
+        <h3>Three Celebration Styles</h3>
+        <p>The Studio Redemption Party. The ARE Funeral. Stamp and Sip. Each with a tone, a structure, and a clear sense of who it's for. Pick one or steal from all three.</p>
+      </a>
+      <a href="#ch-04" class="inside-card reveal" data-cta="inside-card" data-loc="whats-inside">
+        <span class="inside-card-num">04</span>
+        <h3>The Licensure Ritual</h3>
+        <p>A short, readable ceremony designed to name the work, acknowledge the cost, and mark the moment with intention. Can be read aloud. Can be done alone. The emotional center of the playbook.</p>
+      </a>
+      <a href="#ch-05" class="inside-card reveal" data-cta="inside-card" data-loc="whats-inside">
+        <span class="inside-card-num">05</span>
+        <h3>Scripts and Toasts</h3>
+        <p>Real words for real moments. A toast. A note from a mentor. Something to say to yourself before the party starts. Written to feel human, not ceremonial.</p>
+      </a>
+      <a href="#ch-06" class="inside-card reveal" data-cta="inside-card" data-loc="whats-inside">
+        <span class="inside-card-num">06</span>
+        <h3>What the License Is Worth</h3>
+        <p>Your market value just changed — most architects don't know how to use that. A direct look at what licensure means for your salary, your title, and the leverage you have right now.</p>
+      </a>
+      <a href="#ch-07" class="inside-card reveal" data-cta="inside-card" data-loc="whats-inside">
+        <span class="inside-card-num">07</span>
+        <h3>A Note from OOA</h3>
+        <p>Why Out of Architecture made this. What we believe about what a credential means and doesn't mean. A quiet invitation, not a sales pitch.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IT'S FOR -->
+<section class="band" style="padding-top:0;">
+  <div class="wrap">
+    <span class="section-label">Who it's for</span>
+    <h2 class="section-title">For anyone who wants this moment to land the way it should.</h2>
+    <div class="who-grid">
+      <div class="who-item accent reveal">
+        <h3>Newly Licensed Architects</h3>
+        <p>If you just passed your final exam, this is yours. A guide to marking the moment in a way that matches the weight of what you did to get here.</p>
+      </div>
+      <div class="who-item reveal">
+        <h3>Colleagues and Mentors</h3>
+        <p>If someone in your firm or network just got licensed and you want to actually do something meaningful about it, this gives you structure and language.</p>
+      </div>
+      <div class="who-item reveal">
+        <h3>The Career Curious</h3>
+        <p>You just crossed a finish line and something shifted. You're not sure what's next — you just know you're curious. That's exactly where the most interesting career conversations start.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<hr class="section-rule">
-
-<!-- WHATS INSIDE -->
-<section>
-  <span class="section-label">What's inside</span>
-  <h2 class="section-title">A complete guide to celebrating the way you want to.</h2>
-  <div class="inside-grid">
-    <div class="inside-card reveal">
-      <span class="inside-card-num">01 — 02</span>
-      <h3>The Acknowledgment</h3>
-      <p>An honest accounting of what licensure actually required. Not romanticized. Not minimized. Written in a way you can read aloud or hand to someone who wants to understand why this matters.</p>
-    </div>
-    <div class="inside-card reveal">
-      <span class="inside-card-num">03</span>
-      <h3>Three Celebration Styles</h3>
-      <p>The Studio Redemption Party. The ARE Funeral. Stamp and Sip. Each with a tone, a structure, and a clear sense of who it's for. Pick one or steal from all three.</p>
-    </div>
-    <div class="inside-card reveal">
-      <span class="inside-card-num">04</span>
-      <h3>The Licensure Ritual</h3>
-      <p>A short, readable ceremony designed to name the work, acknowledge the cost, and mark the moment with intention. Can be read aloud. Can be done alone. The emotional center of the playbook.</p>
-    </div>
-    <div class="inside-card reveal">
-      <span class="inside-card-num">05</span>
-      <h3>Scripts and Toasts</h3>
-      <p>Real words for real moments. A toast. A note from a mentor. Something to say to yourself before the party starts. Written to feel human, not ceremonial.</p>
-    </div>
-    <div class="inside-card reveal">
-      <span class="inside-card-num">06</span>
-      <h3>What the License Is Worth</h3>
-      <p>Your market value just changed — most architects don't know how to use that. A direct look at what licensure means for your salary, your title, and the leverage you have right now.</p>
-    </div>
-    <div class="inside-card reveal">
-      <span class="inside-card-num">07</span>
-      <h3>A Note from OOA</h3>
-      <p>Why Out of Architecture made this. What we believe about what a credential means and doesn't mean. A quiet invitation, not a sales pitch.</p>
+    <div class="doodle-wrap center reveal" style="margin-top: 56px;">
+      <img class="doodle-img" src="assets/doodles/aesthetic-dims-ink.png" alt="Normal people: 2D aesthetic. Architects: 8-dimensional aesthetic." style="max-width: 840px;" width="1400" height="933" loading="lazy" decoding="async">
     </div>
   </div>
 </section>
 
-<hr class="section-rule">
-
-<!-- WHO ITS FOR -->
-<section>
-  <span class="section-label">Who it's for</span>
-  <h2 class="section-title">For anyone who wants this moment to land the way it should.</h2>
-  <div class="who-grid">
-    <div class="who-item accent reveal">
-      <h3>Newly Licensed Architects</h3>
-      <p>If you just passed your final exam, this is yours. A guide to marking the moment in a way that matches the weight of what you did to get here.</p>
-    </div>
-    <div class="who-item reveal">
-      <h3>Colleagues and Mentors</h3>
-      <p>If someone in your firm or network just got licensed and you want to actually do something meaningful about it, this gives you structure and language.</p>
-    </div>
-    <div class="who-item reveal">
-      <h3>The Career Curious</h3>
-      <p>You just crossed a finish line and something shifted. You're not sure what's next — you just know you're curious. That's exactly where the most interesting career conversations start.</p>
-    </div>
-  </div>
-  <div class="doodle-wrap center reveal" style="margin-top: 64px;">
-    <img class="doodle-img" src="BK_D_W__Figure%201_4%20Chapter%20Four.png" alt="Normal people: 2D aesthetic. Architects: 8-dimensional aesthetic." style="max-width: 840px;">
-  </div>
-</section>
-
-<!-- WHAT'S NEXT -->
-<div class="next-section">
-  <div style="background: var(--accent); height: 3px;"></div>
-  <div class="next-inner">
-    <span class="section-label">After the celebration</span>
-    <h2 class="section-title">The credential changes what's available to you. That's worth sitting with.</h2>
-
-    <div class="next-grid">
-      <div class="next-text reveal">
-        <h3>The "now what" is a real question.</h3>
-        <p>A lot of architects feel something unexpected after licensure. The milestone they worked toward for years is behind them, and the path forward is less obvious than it was before.</p>
-        <p>Your market value just changed. Firms value a licensed architect differently — and most people don't know how to use that. If you're asking any version of "what do I do with this now," that's our favorite conversation to have.</p>
-        <div class="doodle-wrap reveal" style="margin-top: 48px;">
-          <img class="doodle-img" src="BK_D_B_Figure%203_0%20Part%20Three.png" alt="You are here: tangled web of skills leading to question mark" style="max-width: 720px; mix-blend-mode: multiply; opacity: 0.8;">
-        </div>
+<!-- NEWSLETTER -->
+<div class="slab on-dark" id="newsletter">
+  <div class="slab-inner">
+    <div class="news-grid">
+      <div>
+        <span class="section-label">The newsletter</span>
+        <h2>Get career notes in your inbox.</h2>
+        <p>Occasional dispatches for architects and designers exploring what comes next — openings worth knowing about, what the market is actually paying, and the odd useful idea. No hard sell.</p>
       </div>
       <div>
-        <div class="collective-card reveal">
-          <span class="section-label">Out of Architecture — Career Coaching</span>
-          <h3>Whether you know what you want or you're just career curious — let's talk.</h3>
-          <p>Jake and Erin work with licensed architects and designers at every stage of the "what's next" question. Some people come in with a specific transition in mind. Most come in somewhere between unsettled and intrigued. Both are the right time to have the conversation.</p>
-          <ul class="collective-features">
-            <li>One-on-one coaching with people who've actually made the transition</li>
-            <li>Honest assessment of your market value and what's actually possible</li>
-            <li>Career frameworks built for architectural talent, not generic advice</li>
-            <li>No pitch. No pressure. Just a real conversation.</li>
-          </ul>
-          <a href="https://www.outofarchitecture.com/scheduling" class="btn-collective">Book a Call</a>
-        </div>
+        <form class="news-form" id="news-form" action="https://app.kit.com/forms/9556884/subscriptions" method="post">
+          <label for="news-email" class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);">Email address</label>
+          <input id="news-email" type="email" name="email_address" placeholder="your@email.com" autocomplete="email" required>
+          <input type="hidden" name="fields[subscriber_source]" value="licensure-playbook">
+          <button type="submit" class="btn btn-gold">Subscribe</button>
+        </form>
+        <p class="news-note">Free. Unsubscribe anytime.</p>
+        <p class="news-status" id="news-status" role="status" aria-live="polite"></p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ABOUT OOA -->
-<section class="about-section">
-  <div class="about-grid">
+<!-- AFTER THE CELEBRATION -->
+<section class="band">
+  <div class="wrap">
+    <span class="section-label">After the celebration</span>
+    <h2 class="section-title">The credential changes what's available to you. That's worth sitting with.</h2>
+
+    <div class="split-grid" style="margin-top:48px;">
+      <div class="reveal">
+        <h3 style="font-size:clamp(22px,2.6vw,28px); margin-bottom:14px; line-height:1.2;">The "now what" is a real question.</h3>
+        <p class="body-text">A lot of architects feel something unexpected after licensure. The milestone they worked toward for years is behind them, and the path forward is less obvious than it was before.</p>
+        <p class="body-text" style="margin-top:16px;">Your market value just changed. Firms value a licensed architect differently — and most people don't know how to use that. If you're asking any version of "what do I do with this now," that's our favorite conversation to have.</p>
+        <div class="doodle-wrap reveal" style="margin-top: 44px;">
+          <img class="doodle-img" src="assets/doodles/you-are-here-ink.png" alt="You are here: tangled web of skills leading to question mark" style="max-width: 720px;" width="1400" height="1120" loading="lazy" decoding="async">
+        </div>
+      </div>
+      <div>
+        <div class="offer-card reveal">
+          <span class="section-label">Out of Architecture — The Collective</span>
+          <h3>Whether you know what you want or you're just career curious — start the conversation.</h3>
+          <div class="offer-price">
+            <span class="amount">$1</span>
+            <span class="term">Career Curious membership</span>
+          </div>
+          <p>The lowest-commitment way in. You get into the room with architects working through the same question, and you can see what the rest of it is worth before you decide anything.</p>
+          <ul class="feature-list">
+            <li>A peer community of architects navigating the same "what's next"</li>
+            <li>Curated job board for non-traditional paths</li>
+            <li>Weekly office hours with Jake, Erin, and guest mentors</li>
+            <li>Career frameworks built for architectural talent, not generic advice</li>
+          </ul>
+          <div class="btn-row">
+            <a href="https://community.outofarchitecture.com/checkout/career-curious" class="btn btn-gold" data-cta="career-curious" data-loc="after-celebration">Start for $1</a>
+            <a href="#newsletter" class="btn btn-outline-dark" data-cta="newsletter-jump" data-loc="after-celebration">Just the newsletter</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="band" style="padding-top:0;">
+  <div class="wrap about-grid">
     <div class="reveal">
       <span class="section-label">About</span>
       <h2 class="section-title">Out of Architecture</h2>
     </div>
     <div class="reveal">
-      <p class="body-text" style="font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--cream); line-height: 1.6;">We are not trying to pull anyone away from architecture. We are trying to give architects more agency over what happens next.</p>
-      <p class="body-text" style="margin-top: 28px;">Out of Architecture was founded by Jake Rudin and Erin Pellegrino — both licensed architects whose careers moved well beyond traditional practice. Jake has spent years at the intersection of recruiting, coaching, and architectural talent. Erin brings design and academia. Together they built OOA to support architects at the moments when career, identity, and direction get real.</p>
-      <div class="doodle-wrap reveal" style="margin-top: 56px;">
-        <img class="doodle-img" src="BK_D_W__Figure%204_0%20Conclusion.png" alt="End of book, start of journey: bird leaving cage" style="max-width: 760px;">
+      <p class="pull-quote">We are not trying to pull anyone away from architecture. We are trying to give architects more agency over what happens next.</p>
+      <p class="body-text" style="margin-top: 26px;">Out of Architecture was founded by Jake Rudin and Erin Pellegrino — both licensed architects whose careers moved well beyond traditional practice. Jake has spent years at the intersection of recruiting, coaching, and architectural talent. Erin brings design and academia. Together they built OOA to support architects at the moments when career, identity, and direction get real.</p>
+      <div class="doodle-wrap reveal" style="margin-top: 48px;">
+        <img class="doodle-img" src="assets/doodles/bird-cage-ink.png" alt="End of book, start of journey: bird leaving cage" style="max-width: 760px;" width="1400" height="1120" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
 </section>
 
 <!-- PRE-HANDBOOK CTA -->
-<div class="pre-handbook-cta">
-  <div class="pre-handbook-inner">
-    <div class="pre-handbook-text">
-      <span class="section-label">Already career curious?</span>
-      <h3>That's exactly who we want to talk to.</h3>
+<div class="slab on-dark">
+  <div class="slab-inner" style="padding-top:clamp(1.75rem,3vw,2.75rem); padding-bottom:clamp(1.75rem,3vw,2.75rem);">
+    <div class="cta-strip-inner">
+      <div>
+        <span class="section-label" style="margin-bottom:10px;">Already career curious?</span>
+        <h3>That's exactly who we want to talk to.</h3>
+      </div>
+      <div class="btn-row" style="flex-shrink:0;">
+        <a href="https://community.outofarchitecture.com/checkout/career-curious" class="btn btn-gold" data-cta="career-curious" data-loc="pre-handbook">Start for $1</a>
+        <a href="#newsletter" class="btn btn-outline-dark" data-cta="newsletter-jump" data-loc="pre-handbook">Get the newsletter</a>
+      </div>
     </div>
-    <a href="https://www.outofarchitecture.com/scheduling" class="btn-collective" style="flex-shrink:0;">Book a Call</a>
   </div>
 </div>
 
+<!-- CHAPTER RAIL -->
+<nav class="chapter-rail" id="chapter-rail" aria-label="Playbook chapters">
+  <a class="rail-dot" href="#ch-01" data-ch="01"><span class="rail-tip">01 · This Moment Matters</span></a>
+  <a class="rail-dot" href="#ch-02" data-ch="02"><span class="rail-tip">02 · What You Accomplished</span></a>
+  <a class="rail-dot" href="#ch-03" data-ch="03"><span class="rail-tip">03 · Celebration Styles</span></a>
+  <a class="rail-dot" href="#ch-04" data-ch="04"><span class="rail-tip">04 · The Licensure Ritual</span></a>
+  <a class="rail-dot" href="#ch-05" data-ch="05"><span class="rail-tip">05 · What to Say</span></a>
+  <a class="rail-dot" href="#ch-06" data-ch="06"><span class="rail-tip">06 · What the License Is Worth</span></a>
+  <a class="rail-dot" href="#ch-07" data-ch="07"><span class="rail-tip">07 · A Note from OOA</span></a>
+</nav>
+
 <!-- PLAYBOOK FULL TEXT -->
-<div class="playbook-full" id="handbook">
+<div class="slab handbook-slab on-dark" id="handbook">
+  <div class="slab-inner">
   <div class="playbook-doc">
     <div class="doc-header">
       <span class="section-label">Out of Architecture</span>
@@ -1080,10 +945,10 @@
     </div>
 
     <!-- CHAPTER 01 -->
-    <div class="doc-chapter reveal">
+    <div class="doc-chapter reveal" id="ch-01">
       <span class="chapter-num">01</span>
       <h2 class="chapter-title">This Moment Matters</h2>
-      <img class="doc-doodle" src="BK_D_W__Figure%201_0%20Part%20One.png" alt="The Disconnect">
+      <img class="doc-doodle" src="assets/doodles/disconnect-cream.png" alt="The Disconnect" width="1400" height="1120" loading="lazy" decoding="async">
       <div class="doc-body">
         <p>You probably haven't let yourself fully feel this yet.</p>
         <p>There's a specific quality to the weeks after licensure that a lot of architects describe the same way: relief first, then a flatness they weren't expecting. The exam is done. The application is approved. The certificate shows up. And then it's Tuesday.</p>
@@ -1097,10 +962,10 @@
     </div>
 
     <!-- CHAPTER 02 -->
-    <div class="doc-chapter reveal">
+    <div class="doc-chapter reveal" id="ch-02">
       <span class="chapter-num">02</span>
       <h2 class="chapter-title">What You Actually Accomplished</h2>
-      <img class="doc-doodle" src="BK_D_W__Figure%202_0%20Part%20Two.png" alt="School and Practice: the overlap is internships">
+      <img class="doc-doodle" src="assets/doodles/school-practice-cream.png" alt="School and Practice: the overlap is internships" width="1400" height="1120" loading="lazy" decoding="async">
       <div class="doc-body">
         <p>Before any celebration, it helps to say it plainly. Here is what licensure actually required.</p>
 
@@ -1122,7 +987,7 @@
     </div>
 
     <!-- CHAPTER 03 -->
-    <div class="doc-chapter reveal">
+    <div class="doc-chapter reveal" id="ch-03">
       <span class="chapter-num">03</span>
       <h2 class="chapter-title">Choose Your Celebration Style</h2>
       <div class="doc-body">
@@ -1135,7 +1000,7 @@
           <p>This is the version for people who want a room full of people who actually get it. Former studio classmates. Current coworkers. The people who were in the trenches with you during crits and long model-building nights and ARE study sessions at 11pm.</p>
           <p>The Studio Redemption Party leans into the shared suffering. It's a victory lap, but it's a knowing one. Inside jokes are allowed. Complaints about the process are valid toasts. The vibe is earned relief rather than formal recognition.</p>
           <p>Consider a venue with room to breathe. A bar with a back room, a rooftop, a gallery space, a friend's generous apartment. Drinks that feel celebratory without being fussy. Music that matches the energy of the group. A brief moment near the beginning or end where someone says something real about what it took. Not a speech. Just a sentence or two that names it honestly before the night moves on.</p>
-          <p>If you want to use the Licensure Ritual from Chapter 04, this is the setting for it.</p>
+          <p>If you want to use the Licensure Ritual from <a href="#ch-04" style="color:var(--gold);">Chapter 04</a>, this is the setting for it.</p>
         </div>
 
         <div class="archetype-block">
@@ -1152,17 +1017,17 @@
           <p class="archetype-meta">For the quieter celebrant — Size: 2 to 8 people — Tone: warm, low-key, intentional</p>
           <p>Not everyone wants a party. Some people want to sit with a small number of people who matter and actually mark the moment with some intention and quiet.</p>
           <p>Stamp and Sip is for that. A dinner at home or a favorite restaurant. The people who were most present for the journey. A good bottle of something. Time to actually talk about what it meant and what comes next without the energy management of a larger gathering.</p>
-          <p>This is where the Licensure Ritual from Chapter 04 can happen most naturally. Read it aloud or pass it around the table. Let the conversation go where it goes.</p>
+          <p>This is where the Licensure Ritual from <a href="#ch-04" style="color:var(--gold);">Chapter 04</a> can happen most naturally. Read it aloud or pass it around the table. Let the conversation go where it goes.</p>
           <p>The Stamp and Sip format pairs well with a symbolic object. Print your stamp. Frame it. Set it somewhere visible. The simplest version of acknowledgment is sometimes the one that lasts.</p>
         </div>
       </div>
     </div>
 
     <!-- CHAPTER 04 -->
-    <div class="doc-chapter reveal">
+    <div class="doc-chapter reveal" id="ch-04">
       <span class="chapter-num">04</span>
       <h2 class="chapter-title">The Licensure Ritual</h2>
-      <img class="doc-doodle" src="BK_D_W__Figure%201_3%20Chapter%20Three.png" alt="Hope over time in the real world">
+      <img class="doc-doodle" src="assets/doodles/hope-over-time-cream.png" alt="Hope over time in the real world" width="1200" height="1200" loading="lazy" decoding="async">
       <div class="doc-body">
         <p>What follows is a short ceremony. It can be read aloud by someone who cares about the person being celebrated. It can be read by the licensed architect themselves. It can be read silently before the rest of the night begins.</p>
         <p>It is not a performance. It is a frame for naming what happened honestly before moving on.</p>
@@ -1187,7 +1052,7 @@
     </div>
 
     <!-- CHAPTER 05 -->
-    <div class="doc-chapter reveal">
+    <div class="doc-chapter reveal" id="ch-05">
       <span class="chapter-num">05</span>
       <h2 class="chapter-title">What to Say</h2>
       <div class="doc-body">
@@ -1211,7 +1076,7 @@
     </div>
 
     <!-- CHAPTER 06 -->
-    <div class="doc-chapter reveal">
+    <div class="doc-chapter reveal" id="ch-06">
       <span class="chapter-num">06</span>
       <h2 class="chapter-title">What the License Is Worth</h2>
       <div class="doc-body">
@@ -1239,65 +1104,191 @@
         <h4>What's realistic</h4>
         <p>Market ranges vary by city, firm type, and your years of experience. But in most markets, a licensed architect earns meaningfully more than an unlicensed one at the same seniority level. If your compensation has not changed and your credential has, the gap is yours to name.</p>
         <p>If you want to know what you're actually worth in your market — not a generic number, but a real read on your specific situation — that's a conversation we have with people regularly. It's one of the more useful things we do.</p>
+
+        <div class="btn-row" style="margin-top:32px;">
+          <a href="https://community.outofarchitecture.com/checkout/career-curious" class="btn btn-gold" data-cta="career-curious" data-loc="ch-06">Talk it through for $1</a>
+          <a href="#newsletter" class="btn btn-outline-dark" data-cta="newsletter-jump" data-loc="ch-06">Get the newsletter</a>
+        </div>
       </div>
     </div>
 
     <!-- CHAPTER 07 -->
-    <div class="doc-chapter reveal" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
+    <div class="doc-chapter reveal" id="ch-07" style="border-bottom: none; margin-bottom: 0; padding-bottom: 0;">
       <span class="chapter-num">07</span>
       <h2 class="chapter-title">A Note from OOA</h2>
-      <img class="doc-doodle" src="BK_D_W__Figure%203_0%20Part%20Three.png" alt="You are here: where does the path go from licensure?">
+      <img class="doc-doodle" src="assets/doodles/you-are-here-cream.png" alt="You are here: where does the path go from licensure?" width="1400" height="1120" loading="lazy" decoding="async">
       <div class="doc-body">
         <p>Out of Architecture exists because a lot of licensed architects reach this moment and feel something they weren't expecting. Pride, yes. Relief, definitely. And also a question that doesn't have an obvious answer: what now?</p>
         <p>Licensure changes things. It changes your market value. It changes your professional standing. It opens up paths that weren't available before. But the architectural profession doesn't always do a great job of helping people understand that. The conversation about what a credential is actually worth tends to happen in private, if it happens at all.</p>
         <p>We made this playbook because licensure deserves to be celebrated. We share the resources we do because architects deserve to navigate their careers from a position of information and agency, not just institutional habit.</p>
         <p>If you find yourself asking what you want to do with the credential now — that's a question we work on every day. We'd love to have that conversation.</p>
         <p>But tonight is not for that. Tonight is for this.</p>
-        <p style="font-family: 'Cormorant Garamond', serif; font-size: 22px; font-weight: 400; font-style: italic; color: var(--cream); margin-top: 40px; line-height: 1.5;">Congratulations. You earned it. Celebrate it properly.</p>
-        <p style="margin-top: 32px; font-size: 14px; color: var(--muted);">Jake Rudin and Erin Pellegrino<br>Out of Architecture</p>
-        <a href="https://www.outofarchitecture.com/scheduling" class="btn-collective" style="display:inline-block; margin-top: 32px;">Book a Call</a>
+        <p style="font-family: 'Cormorant Garamond', Georgia, serif; font-size: 22px; font-weight: 400; font-style: italic; color: var(--on-dark-1); margin-top: 36px; line-height: 1.5;">Congratulations. You earned it. Celebrate it properly.</p>
+        <p style="margin-top: 28px; font-size: var(--text-body-sm); color: var(--on-dark-3);">Jake Rudin and Erin Pellegrino<br>Out of Architecture</p>
       </div>
     </div>
-
 
     <!-- HANDBOOK CLOSING CTA -->
     <div class="handbook-cta-close">
       <span class="section-label">Out of Architecture</span>
-      <p>If the playbook made you think — even a little — about what the credential means for what's next, we'd love to have that conversation.</p>
-      <a href="https://www.outofarchitecture.com/scheduling" class="btn-collective">Book a Call with Jake or Erin</a>
+      <p>If the playbook made you think — even a little — about what the credential means for what's next, there are two easy ways to keep the thread going.</p>
+      <div class="btn-row">
+        <a href="https://community.outofarchitecture.com/checkout/career-curious" class="btn btn-gold" data-cta="career-curious" data-loc="handbook-close">Start for $1</a>
+        <a href="#newsletter" class="btn btn-outline-dark" data-cta="newsletter-jump" data-loc="handbook-close">Get the newsletter</a>
+      </div>
     </div>
 
+  </div>
   </div>
 </div>
 
 <!-- FOOTER -->
 <footer>
-  <a href="https://outofarchitecture.com" class="footer-logo">
-    <img src="assets/OOA_Logo_OneLine_white.png" alt="Out of Architecture" class="footer-logo-img">
+  <a href="https://www.outofarchitecture.com" class="nav-logo" data-cta="logo" data-loc="footer">
+    <img src="assets/OOA_Logo_OneLine_black.png" alt="Out of Architecture" class="footer-logo-img" width="688" height="88">
   </a>
+  <div class="footer-links">
+    <a href="https://www.outofarchitecture.com/open-positions">Job Board</a>
+    <a href="https://www.outofarchitecture.com/scheduling">Career Coaching</a>
+    <a href="https://www.outofarchitecture.com/about">About OOA</a>
+    <a href="https://community.outofarchitecture.com/checkout/career-curious" data-cta="career-curious" data-loc="footer">Start for $1</a>
+  </div>
   <span class="footer-copy">© 2026 Out of Architecture. All rights reserved.</span>
 </footer>
 
 <script>
-// Smooth scroll for handbook anchor
-document.querySelectorAll('a[href="#handbook"]').forEach(a => {
-  a.addEventListener('click', function(e) {
-    e.preventDefault();
-    document.getElementById('handbook').scrollIntoView({ behavior: 'smooth', block: 'start' });
-  });
-});
+(function () {
+  'use strict';
 
-// Scroll reveal
-const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach(el => {
-    if (el.isIntersecting) {
-      el.target.classList.add('visible');
-      revealObserver.unobserve(el.target);
-    }
-  });
-}, { threshold: 0.08, rootMargin: '-20px 0px' });
+  var track = function (name, params) {
+    if (typeof gtag === 'function') { gtag('event', name, params || {}); }
+  };
 
-document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  /* ---- CTA click tracking: one event, distinguishable by id + location ---- */
+  document.querySelectorAll('[data-cta]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      track('cta_click', {
+        cta_id: el.getAttribute('data-cta'),
+        cta_location: el.getAttribute('data-loc'),
+        cta_text: (el.textContent || '').trim().slice(0, 60)
+      });
+    });
+  });
+
+  /* ---- Scroll reveal ---- */
+  var revealObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('visible'); revealObserver.unobserve(e.target); }
+    });
+  }, { threshold: 0.08, rootMargin: '-20px 0px' });
+  document.querySelectorAll('.reveal').forEach(function (el) { revealObserver.observe(el); });
+
+  /* ---- Chapter tracking + scroll-spy rail ---- */
+  var chapters = Array.prototype.slice.call(document.querySelectorAll('.doc-chapter'));
+  var dots = Array.prototype.slice.call(document.querySelectorAll('.rail-dot'));
+  var rail = document.getElementById('chapter-rail');
+  var handbook = document.getElementById('handbook');
+  var seen = {};
+  var deepest = 0;
+
+  function setActive(id) {
+    dots.forEach(function (d) { d.classList.toggle('on', d.getAttribute('href') === '#' + id); });
+  }
+
+  var chapterObserver = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      var id = e.target.id;
+      setActive(id);
+      if (!seen[id]) {
+        seen[id] = true;
+        var num = parseInt(id.replace('ch-', ''), 10);
+        if (num > deepest) { deepest = num; }
+        track('chapter_view', {
+          chapter_number: num,
+          chapter_title: (e.target.querySelector('.chapter-title') || {}).textContent || id
+        });
+      }
+    });
+  }, { threshold: 0.2, rootMargin: '-25% 0px -55% 0px' });
+  chapters.forEach(function (c) { chapterObserver.observe(c); });
+
+  /* Fire once when the reader actually enters the playbook */
+  if (handbook) {
+    var openObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { track('playbook_open', {}); openObserver.disconnect(); }
+      });
+    }, { threshold: 0.05 });
+    openObserver.observe(handbook);
+
+    /* Show the rail only while the playbook is on screen */
+    var railObserver = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { rail.classList.toggle('active', e.isIntersecting); });
+    }, { threshold: 0, rootMargin: '-10% 0px -10% 0px' });
+    railObserver.observe(handbook);
+  }
+
+  /* Report how far they actually read, once, on the way out */
+  var reported = false;
+  function reportDepth() {
+    if (reported || !deepest) return;
+    reported = true;
+    track('playbook_depth', { deepest_chapter: deepest, finished: deepest === 7 });
+  }
+  document.addEventListener('visibilitychange', function () {
+    if (document.visibilityState === 'hidden') { reportDepth(); }
+  });
+
+  /* ---- Reading progress bar ---- */
+  var bar = document.getElementById('progress');
+  var ticking = false;
+  function updateProgress() {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    bar.style.width = max > 0 ? ((h.scrollTop / max) * 100) + '%' : '0%';
+    ticking = false;
+  }
+  window.addEventListener('scroll', function () {
+    if (!ticking) { ticking = true; window.requestAnimationFrame(updateProgress); }
+  }, { passive: true });
+  updateProgress();
+
+  /* ---- Newsletter (Kit) ---- */
+  var form = document.getElementById('news-form');
+  var status = document.getElementById('news-status');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var btn = form.querySelector('button[type="submit"]');
+      var email = form.querySelector('input[name="email_address"]').value.trim();
+      if (!email) { return; }
+
+      btn.disabled = true;
+      status.className = 'news-status';
+      status.textContent = 'Subscribing…';
+
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      })
+        .then(function (r) { return r.json().catch(function () { return {}; }); })
+        .then(function (data) {
+          if (data && data.error) { throw new Error(data.error); }
+          status.className = 'news-status ok';
+          status.textContent = 'Check your email to confirm your subscription.';
+          form.reset();
+          track('newsletter_submit', { source: 'licensure-playbook' });
+        })
+        .catch(function () {
+          status.className = 'news-status err';
+          status.textContent = 'Something went wrong. Try again, or email hello@outofarchitecture.com.';
+        })
+        .finally(function () { btn.disabled = false; });
+    });
+  }
+})();
 </script>
 
 </body>
